@@ -7,13 +7,15 @@
     "dev": "vite",
     "build": "vite build",
     "build:preview": "vite build --mode single",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:artifact": "vite build --mode single && node scripts/make-preview.mjs dist-single/preview.html"
   },
   "devDependencies": {
     "vite": "^8.3.8",
     "vite-plugin-singlefile": "^2.3.4"
   },
   "dependencies": {
+    "@fontsource/lato": "^5.2.5",
     "marked": "^18.2.0"
   }
 }
