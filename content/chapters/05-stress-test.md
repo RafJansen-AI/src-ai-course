@@ -7,7 +7,7 @@ minutes: 7
 ---
 ## Examine in the room
 
-This is the main takeaway of the course. **Under our rules, you can't reliably tell whether take-home work was done with unauthorised AI. So rely mainly on examination you can see**: in-class exams, in-class writing, oral checks, seminars where students explain their own work.
+This is the main takeaway of the course. **Under our rules, you can't reliably tell whether take-home work was done with unauthorised AI. So rely mainly on examination you can see**: in-class exams, in-class writing, [[oral checks|oral-defence]], seminars where students explain their own work.
 
 That doesn't mean dropping take-home work. It means changing its role: take-home assignments become **preparation for the exam**, where AI as a tutor can genuinely help, and the decisive part of the grade happens in the room. Tell students this. A student who lets AI do the assignments skips the practice, and pays for it at the exam.
 

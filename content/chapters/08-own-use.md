@@ -27,10 +27,10 @@ Running a reference list through a chatbot with web search is a quick way to cat
 Clause 3B says AI must not influence a grade "directly or indirectly", and a fake reference you find this way will matter for the assessment. Our reading: the AI only points to where to look; the finding is yours, from your own lookup. The next version of the policy should say this explicitly. [[rule:t-3b]]
 :::
 
-:::beginner Which tool may I use?
+:::note Which tool may I use?
 **Microsoft 365 [[Copilot]] Chat**, signed in with your SU account, is in practice the only tool SU has approved. Staff have it, and students most likely do too through their SU Microsoft 365 account. Your data isn't used to train the model. It's a good place to start if you're new to this or unsure about data safety, as long as you keep sensitive data out (below). It's not a requirement: ChatGPT, Claude and others are often stronger, and fine for work that contains no student data or other sensitive information.
 
-**Sensitive data stays out of every AI tool, for now.** That includes Copilot Chat: it isn't cleared for information at confidentiality level 3 or 4, because chat history is saved. Health information, disciplinary matters, unpublished theses and similar don't go into any chatbot ([[rule:t-4|teacher policy 4]]). Free tools outside the university login have no data protection at all, so keep names and identifying details out of those too. When unsure, ask the SRC staff responsible for [[GDPR]]. See [[approved tool]] and SU's [AI resources page](https://medarbetare.su.se/en/support-and-service/it/ai-resources-at-stockholm-university).
+**Sensitive data stays out of every AI tool, for now.** That includes Copilot Chat: it isn't cleared for information at confidentiality level 3 or 4, because chat history is saved. Health information, disciplinary matters, unpublished theses and similar don't go into any chatbot ([[rule:t-4|teacher policy 4]]). Free tools outside the university login have no data protection at all, so keep names and other [[personal data]] out of those too. When unsure, ask the SRC staff responsible for [[GDPR]]. See [[approved tool]] and SU's [AI resources page](https://medarbetare.su.se/en/support-and-service/it/ai-resources-at-stockholm-university).
 
 The one exception is a [[local model]], which runs on your own computer so nothing leaves it. That's only a safe option if you really know what you're doing. If the term is new to you, it isn't for you yet.
 :::
