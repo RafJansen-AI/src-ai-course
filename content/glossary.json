@@ -178,7 +178,7 @@
       "copilot chat"
     ],
     "short": "Microsoft's name for its AI assistants, which appear in Windows, Edge and Office apps. Several different products share the name, and what each can access and store varies.",
-    "more": "At SU, Microsoft 365 Copilot Chat, signed in with the university account, is in practice the only approved AI tool. Staff have it, and students most likely do too. Your data isn't used for training. It's a good start for beginners unsure about data safety, but not a requirement; other chatbots are often stronger. Even Copilot Chat isn't cleared for information at confidentiality level 3 or 4, because chat history is saved.",
+    "more": "At SU, Microsoft 365 Copilot Chat, signed in with the university account, is in practice the only approved AI tool. Staff have it, and students most likely do too. Your data isn't used for training. It's a safer start than free tools for beginners, but not a requirement; other chatbots are often stronger. It is not for sensitive data: even Copilot Chat isn't cleared for information at confidentiality level 3 or 4, because chat history is saved.",
     "see": [
       "approved-tool",
       "chatbot"
