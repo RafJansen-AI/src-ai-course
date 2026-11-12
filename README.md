@@ -26,7 +26,7 @@ Chapter files are Markdown with a few extras:
 [[shown text|term-id]]      glossary term with your own wording
 [[rule:t-3b]]               link to a policy clause, opens the Rules drawer
 [[rule:t-3b|clause 3B]]     same, with your own wording
-<div data-widget="dial"></div>   interactive widget (checkin, course-setup, scenarios, dial, kit)
+<div data-widget="dial"></div>   interactive widget (see src/widgets/index.js)
 <!-- slide: beginner -->    first line of a slide: only on the beginner path
 <!-- slide: wide -->        wider layout
 ```
@@ -39,12 +39,30 @@ and bump `version` / `revised` in the front matter. Returning visitors then see 
 
 Learner answers are stored only in the visitor's browser (localStorage). No accounts, no tracking.
 
+## What's where in the code
+
+| Widget | Chapter | File |
+| --- | --- | --- |
+| Check-in, course setup | 0 | `src/widgets/checkin.js`, `course-setup.js` |
+| Spot the AI | 1 | `src/widgets/spot.js` |
+| "What can AI do" cards | 2 | `src/widgets/flipcards.js` (cards are in the chapter file) |
+| Rules scenarios | 3 | `src/widgets/scenarios.js` (the 12 cases and verdicts are at the top) |
+| Rules per assessment | 4 | `src/widgets/dial.js`, practical rules per assessment type in `practice.js` |
+| Stress test | 5 | `src/widgets/stress.js` |
+| Fix this brief | 6 | `src/widgets/brief.js` |
+| Misuse case | 7 | `src/widgets/branch.js` |
+| Disclosure line | 8 | `src/widgets/disclosure.js` |
+| Course AI Kit, first-lecture script | 6, 9 | `src/widgets/kit.js`, exercises in `practice.js` |
+
+Standalone pages (like About) live in `content/pages/` and are shown at `#/p/<id>`.
+
 ## Development
 
 ```
 npm install
 npm run dev          # local dev server
 npm run build        # static site in dist/
+npm run preview:artifact   # single-file preview in dist-single/preview.html
 ```
 
 ## Deploying on Cloudflare

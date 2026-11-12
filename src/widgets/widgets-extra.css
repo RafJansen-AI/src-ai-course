@@ -1,0 +1,32 @@
+/* flipcards */
+.fc-bar { display: flex; justify-content: flex-end; margin-bottom: .7rem; }
+.fc-grid { display: grid; grid-template-columns: 1fr; gap: .9rem; }
+@media (min-width: 640px) { .fc-grid { grid-template-columns: 1fr 1fr; } }
+.fc-card { display: grid; min-width: 0; }
+.fc-face {
+  grid-area: 1 / 1; display: flex; flex-direction: column; gap: .6rem; min-width: 0;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.1rem; box-shadow: var(--shadow);
+  transition: opacity .2s ease; overflow-wrap: anywhere;
+}
+.fc-face.back { background: var(--sky-soft); border-color: var(--blue-80); opacity: 0; visibility: hidden; }
+.fc-card.flipped .fc-face.front { opacity: 0; visibility: hidden; }
+.fc-card.flipped .fc-face.back { opacity: 1; visibility: visible; }
+.fc-tag { font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 900; color: var(--fire-ink); }
+.fc-body { flex: 1; }
+.fc-body > :first-child { margin-top: 0; }
+.fc-body > :last-child { margin-bottom: 0; }
+.fc-face .btn { align-self: flex-start; }
+.fc-bar .btn:focus-visible, .fc-face .btn:focus-visible, .dc-root .chip:focus-visible, .dc-root .btn:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+/* disclosure generator */
+.dc-root .callout { margin: 1rem 0 0; }
+.dc-root .callout p { margin: 0; }
+.dc-root .hint { margin: .6rem 0 0; }
+.dc-out { margin-top: 1.2rem; }
+.dc-out .statement { margin: .4rem 0 .7rem; }
+.dc-other { margin-top: .6rem; max-width: 20rem; }
+.dc-root .q { margin-bottom: 1.2rem; }
+.dc-actions { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+.dc-root .chip { text-align: left; }
+
+@media (prefers-reduced-motion: reduce) { .fc-face { transition: none; } }

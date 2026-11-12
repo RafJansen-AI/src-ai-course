@@ -5,7 +5,7 @@ title: Start here
 summary: Who you are, which course you teach.
 minutes: 3
 ---
-<svg class="art-hero" viewBox="0 0 360 120" role="img" aria-label="">
+<svg class="art-hero" viewBox="0 0 360 120" aria-hidden="true" focusable="false">
   <circle cx="60" cy="60" r="52" fill="#EB7125"/>
   <circle cx="60" cy="60" r="30" fill="none" stroke="#fff" stroke-width="8"/>
   <circle cx="160" cy="60" r="52" fill="#A1D8E0"/>
@@ -18,7 +18,9 @@ minutes: 3
 
 <p class="lead">Students can now get a decent essay, report or piece of code from a chatbot in minutes. This course is about what that means for how you teach and assess, and what SRC's rules say you can and can't do.</p>
 
-By the end you'll have a **Course AI Kit**: text you can paste straight into your syllabus and assignment briefs, telling students exactly how they may use AI in your course. Set it up before the course starts and say it out loud in the first lecture. That's most of the battle.
+By the end you'll have a **Course AI Kit**: text for your syllabus and assignment briefs that makes SRC's AI rules concrete for your course, plus practical tips and exercises. Set it up before the course starts and say it out loud in the first lecture.
+
+One message runs through the whole course: **under our rules, unauthorised AI use is hard to spot, so the parts of the assessment that matter most should happen in the room.**
 
 - About 45 minutes. Your progress is saved in this browser, so you can stop and come back.
 - The **Rules** button (top right) opens SRC's current AI policies at any point.

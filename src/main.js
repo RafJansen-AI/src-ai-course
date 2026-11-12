@@ -1,5 +1,5 @@
 import './styles.css';
-import { chapters, esc } from './lib/content.js';
+import { chapters, pages, esc } from './lib/content.js';
 import * as store from './lib/store.js';
 import { initGlossary, glossaryPageHtml } from './lib/glossary-ui.js';
 import { openRules, closeRules, rulesChanged, trapFocus } from './lib/rules-ui.js';
@@ -28,6 +28,7 @@ function parseHash() {
   const parts = h.split('/').filter(Boolean);
   if (parts[0] === 'c' && parts[1]) return { type: 'slide', chapter: parts[1], index: Number(parts[2] || 0) };
   if (parts[0] === 'glossary') return { type: 'glossary', term: parts[1] };
+  if (parts[0] === 'p' && pages[parts[1]]) return { type: 'page', id: parts[1] };
   return { type: 'home' };
 }
 
@@ -41,6 +42,7 @@ function render() {
   cleanup();
   const route = parseHash();
   if (route.type === 'glossary') return renderGlossary(route.term);
+  if (route.type === 'page') return renderPage(route.id);
   if (route.type === 'home') {
     const first = chapters[0];
     return go(first.id, 0);
@@ -108,6 +110,16 @@ function renderGlossary(term) {
   stage.querySelector('h1').focus({ preventScroll: !!term });
 }
 
+function renderPage(id) {
+  const p = pages[id];
+  stage.innerHTML = `<article class="slide"><p><a href="${esc(store.get().last || '#/')}">← Back to the course</a></p>${p.html}</article>`;
+  document.querySelector('.navbar').hidden = true;
+  $('#progress').style.width = '0';
+  document.title = `${p.title} · AI in Your Course`;
+  window.scrollTo(0, 0);
+  const h = stage.querySelector('h1'); if (h) { h.tabIndex = -1; h.focus(); }
+}
+
 // ---------- chapter menu ----------
 let menu = null, menuScrim = null, menuReturn = null;
 function openMenu() {
@@ -132,7 +144,7 @@ function openMenu() {
         <span class="ch-meta">${done ? '<span class="done-mark" aria-label="done">✓</span> ' : ''}${c.minutes ? `${c.minutes} min` : ''}</span>
         ${c.summary ? `<span class="ch-sub">${esc(c.summary)}</span>` : ''}</a></li>`;
     }).join('')}</ol>
-    <p class="hint" style="margin-top:1.5rem"><a href="#/glossary">Glossary</a> · ${SINGLE ? '' : '<a href="rules.html" target="_blank" rel="noopener">Rules as a page</a> · '}<button class="btn ghost" type="button" data-reset>Start over (clears your answers)</button></p></div>`;
+    <p class="hint" style="margin-top:1.5rem"><a href="#/glossary">Glossary</a> · <a href="#/p/about">About</a> · ${SINGLE ? '' : '<a href="rules.html" target="_blank" rel="noopener">Rules as a page</a> · '}<button class="btn ghost" type="button" data-reset>Start over (clears your answers)</button></p></div>`;
   menu.querySelector('.icon-btn').addEventListener('click', closeMenu);
   const resetBtn = menu.querySelector('[data-reset]');
   resetBtn.addEventListener('click', () => {

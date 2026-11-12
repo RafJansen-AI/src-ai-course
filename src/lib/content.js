@@ -15,6 +15,7 @@ import { Marked } from 'marked';
 import glossaryData from '../../content/glossary.json';
 
 const chapterFiles = import.meta.glob('../../content/chapters/*.md', { query: '?raw', import: 'default', eager: true });
+const pageFiles = import.meta.glob('../../content/pages/*.md', { query: '?raw', import: 'default', eager: true });
 const ruleFiles = import.meta.glob('../../content/rules/*.md', { query: '?raw', import: 'default', eager: true });
 
 const marked = new Marked({ gfm: true });
@@ -94,7 +95,9 @@ function blockExtensions(md) {
 }
 
 export function renderMarkdown(md) {
-  return marked.parse(inlineExtensions(blockExtensions(md)));
+  return marked.parse(inlineExtensions(blockExtensions(md)))
+    // task lists: make the boxes real, labelled checkboxes the reader can tick
+    .replace(/<li><input (checked="" )?disabled="" type="checkbox">\s*([\s\S]*?)<\/li>/g, (m, c, body) => `<li class="task"><label><input type="checkbox"${c ? ' checked' : ''}> <span>${body}</span></label></li>`);
 }
 
 // ---------- chapters ----------
@@ -139,3 +142,9 @@ function buildRules() {
 }
 export const rules = buildRules();
 export const rulesVersionKey = Object.values(rules).map((r) => `${r.id}:${r.version}:${r.revised}`).sort().join('|');
+
+// ---------- standalone pages ----------
+export const pages = Object.fromEntries(Object.values(pageFiles).map((raw) => {
+  const { data, body } = parseFrontMatter(raw);
+  return [data.id, { ...data, html: renderMarkdown(body) }];
+}));

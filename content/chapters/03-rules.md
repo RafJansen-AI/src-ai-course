@@ -14,10 +14,10 @@ SRC has two AI policies that are meant to be read together: one for **teaching s
 3. **AI stays out of grading.** It can't propose, justify or influence a grade, not even as a second opinion. Language polish of your comments *after* the grade is decided is fine. And no [[AI detectors]]. [[rule:t-3b]] [[rule:t-3c]]
 4. **Sensitive student data stays out of unapproved tools.** Health information, disciplinary matters, unpublished theses. [[rule:t-4]]
 
-The policy's own picture is useful: treat AI as a colleague who is *knowledgeable, fast and overconfident, but not accountable* for your students, your course or your grades.
+The teacher policy applies to everyone in the same way; it isn't something you adapt for your course. The policy's own picture is useful: treat AI as a colleague who is *knowledgeable, fast and overconfident, but not accountable* for your students, your course or your grades.
 
 :::beginner What's the difference between the policy and my course rules?
-The SRC policies set the outer limits and the default. Within those limits, you decide how students may use AI in *your* course and say so in the syllabus or assignment brief (that's chapter 4). If you say nothing, students follow the default student policy.
+The teacher policy is fixed: it applies to all teaching staff. The student policy is the default for every course. Course coordinators may adapt the student rules for a course or assignment, but most courses should keep them and make them concrete (chapter 4).
 :::
 
 ===
@@ -39,8 +39,8 @@ You'll set the rules for your own course in the next chapter, but you need to kn
 - Where AI meaningfully influenced the work, students **disclose it**: which tool, for what, how it changed the work. [[rule:s-2]]
 - **Disclosure doesn't make a forbidden use OK.** Saying "I had ChatGPT write this" is honest, but still not allowed. [[rule:s-2]]
 - Breaking the policy or your course rules can be **academic misconduct**, handled through SU's usual procedure. [[rule:s-3]]
-- Your course rules **override the default**, stricter or looser. Students must follow what the course says. [[rule:s-4]]
+- A course **may adapt the default**, stricter or looser, and students must follow what the course says. [[rule:s-4]]
 
 :::grey
-"Primarily their own intellectual contribution" is a judgement call, and students will read it more generously than you do. That's why the next chapter has you spell out the level for each assignment instead of relying on the default.
+"Primarily their own intellectual contribution" is a judgement call, and students will read it more generously than you do. That's why the next chapter has you spell out what the rules mean for each of your assignments.
 :::
