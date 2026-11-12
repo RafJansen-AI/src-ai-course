@@ -1,3 +1,4 @@
+import { AI_NOTE, AI_NOTE_HINT } from '../lib/ai-note.js';
 import { esc, renderMarkdown } from '../lib/content.js';
 import { typeLabel, EXAMPLE } from './course-setup.js';
 import { PRACTICE } from './practice.js';
@@ -152,7 +153,8 @@ export default function dial(el, { store }) {
           <input type="text" id="why-${a.id}" data-k="why" value="${esc(a.why || '')}" placeholder="e.g. build an argument from the course literature">
           <span class="hint" style="display:block;margin-top:.3rem">This becomes the "why" in the text for students. Students follow rules they understand.</span></label>
         ${statement ? `<p class="q-label" style="margin-bottom:.3rem">Text for your students</p>
-        <div class="statement" aria-live="polite">${esc(statement)}</div>
+        <div class="statement" aria-live="polite">${esc(statement)}<br><br><em>${esc(AI_NOTE)}</em></div>
+        <p class="hint" style="margin:.4rem 0 0">${esc(AI_NOTE_HINT)}</p>
         <p style="margin:.6rem 0 0;display:flex;gap:.5rem;align-items:center"><button type="button" class="btn small" data-copy>Copy text</button><span class="hint" data-copied aria-live="polite"></span></p>` : ''}
       </div>
     </div>`;
@@ -178,10 +180,10 @@ export default function dial(el, { store }) {
     });
     el.querySelectorAll('[data-k]').forEach((i) => i.addEventListener('input', () => {
       save((x) => { x[i.dataset.k] = i.value; });
-      const st = el.querySelector('.statement'); if (st) st.textContent = statementFor(cur());
+      const st = el.querySelector('.statement'); if (st) st.innerHTML = `${esc(statementFor(cur()))}<br><br><em>${esc(AI_NOTE)}</em>`;
     }));
     el.querySelector('[data-copy]')?.addEventListener('click', async () => {
-      try { await navigator.clipboard.writeText(statementFor(cur())); el.querySelector('[data-copied]').textContent = 'Copied.'; }
+      try { await navigator.clipboard.writeText(`${statementFor(cur())}\n\n${AI_NOTE}`); el.querySelector('[data-copied]').textContent = 'Copied.'; }
       catch { el.querySelector('[data-copied]').textContent = 'Copy failed. Select the text and copy it by hand.'; }
     });
     if (focusSel) el.querySelector(focusSel)?.focus();
