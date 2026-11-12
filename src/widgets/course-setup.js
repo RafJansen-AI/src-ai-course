@@ -50,7 +50,7 @@ export default function courseSetup(el, { store }) {
         <button type="button" class="btn small" data-add>+ Add assessment</button>
         ${course.assessments.length ? '' : '<button type="button" class="btn small secondary" data-example>Use an example course instead</button>'}
       </p>
-      <p class="hint" style="margin:.8rem 0 0">Saved in this browser only. Nothing is sent anywhere.</p></div>`;
+      <p class="hint" style="margin:.8rem 0 0">Saved in this browser only. Nothing you type is sent anywhere.</p></div>`;
 
     el.querySelectorAll('[data-f]').forEach((i) => i.addEventListener('input', () => save((co) => { co[i.dataset.f] = i.value; })));
     el.querySelectorAll('[data-a]').forEach((i) => i.addEventListener(i.tagName === 'SELECT' ? 'change' : 'input', () => save((co) => {

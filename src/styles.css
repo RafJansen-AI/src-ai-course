@@ -1,3 +1,8 @@
+@import '@fontsource/lato/latin-400.css';
+@import '@fontsource/lato/latin-400-italic.css';
+@import '@fontsource/lato/latin-700.css';
+@import '@fontsource/lato/latin-900.css';
+
 /* SRC palette (SRC graphic manual v2.0, SU colour rules) */
 :root {
   --fire: #EB7125;          /* SRC profile colour: accents only, ~3:1 on white */

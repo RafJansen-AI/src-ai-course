@@ -57,6 +57,7 @@ A yes/no question about tools invites a yes/no answer. Questions about the *work
       { label: 'Sam explains it well. The reference was a typo in the year and author order.', to: 'fine' },
       { label: 'Sam struggles, then says AI "helped a lot" with the writing and the references.', to: 'admits' },
       { label: 'Sam can\'t explain the argument but insists it\'s all their own work.', to: 'denies' },
+      { label: 'Sam says openly that ChatGPT wrote parts of it, and didn\'t think that was cheating since it was "just help".', to: 'unaware' },
     ],
   },
   fine: {
@@ -76,6 +77,18 @@ What to do:
 - Don't grade the brief until the case is decided.
 
 Reporting isn't punishing. The board looks at whether the student *intended* to mislead, and Sam gets to give their side.`,
+  },
+  unaware: {
+    end: 'assess',
+    text: `**Be understanding, but be clear.** The rules are new, and plenty of students honestly don't see where "help" ends. Sam told you openly, which doesn't look like an attempt to mislead. Cheating needs that intent.
+
+What to do:
+- Explain the rule and why it's there. Point to the line in the brief.
+- Assess the brief on its merits. The parts AI wrote don't show the learning outcomes. If your course allows a resubmission, this is a good case for one.
+- Write down what was said, in case it comes up again.
+- If you're unsure whether this still counts as a well-founded suspicion, ask the director of studies before deciding. Here, the rule was in the brief and the first lecture, which makes "I didn't know" weaker than it would be in a course that said nothing.
+
+As the rules settle in, this excuse should get rarer, and your patience with it can shrink accordingly.`,
   },
   denies: {
     end: 'assess',

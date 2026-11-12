@@ -18,4 +18,5 @@ An interactive course on generative AI for teaching staff at the Stockholm Resil
 
 | Date | Change |
 | --- | --- |
+| 12 Nov 2026 | Fonts are now served with the site, so no requests go to Google. Chapter 7: more room for students who didn't know the rules while they're new. |
 | 12 Nov 2026 | First version: chapters 0 to 9, rules drawer with teacher policy V7 and student policy V8. |

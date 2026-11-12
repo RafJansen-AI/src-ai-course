@@ -37,8 +37,15 @@ Work through it. Some paths are dead ends on purpose.
 - **Clear rules make all of this possible.** If your brief only pointed to the policy, its line ("primarily their own intellectual contribution") is hard to apply after the fact. Concrete examples in the brief help.
 - **This is why in-class examination matters.** The case only came up because the seminar showed what the written brief couldn't. Build that moment into the assessment on purpose, instead of relying on luck.
 
-:::grey A grace period?
-Some colleagues prefer to be lenient while the rules are new. You can be lenient in *how* you talk to students and in what you teach them. But you can't skip reporting a well-founded suspicion, and you shouldn't promise students that you will. What you can do is make the rules so clear, early, that fewer cases arise.
+:::grey While the rules are new
+Many students don't yet realise that some uses of AI count as cheating. Be understanding of that, at least for now. Cheating means *trying to mislead* the examiner, and a student who genuinely didn't understand the rule often wasn't trying to.
+
+Our reading in practice:
+- **It looks like a misunderstanding** (they disclosed the use openly, the brief only pointed to the policy, it's their first course with these rules): talk it through, explain the rule, and assess the work on its merits. That's usually not a well-founded suspicion of cheating.
+- **It looks like they knew** (the rule was concrete in the brief and gone through in class, and the use was hidden): that is a well-founded suspicion, and reporting it isn't optional.
+- **Not sure which?** Ask the director of studies before you decide.
+
+Either way, you can't promise students in advance that nothing will be reported. What you can do is make the rules so clear, early, that the excuse stops applying.
 :::
 
 :::tip Document as you go
