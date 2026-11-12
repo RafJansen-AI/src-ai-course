@@ -9,12 +9,12 @@ The SRC policies come first; everything else here is background. Links were chec
 ## Rules that apply
 
 - **SRC AI policy for teaching staff** and **SRC AI policy for students**: open them with the Rules button. These take precedence over this course.
-- **Stockholm University, *Regler och handläggningsordning för disciplinärenden*** (rules and procedure for disciplinary matters, decided 10 February 2022): who reports, to whom, and what the investigating officer does. [medarbetare.su.se](https://medarbetare.su.se/vart-su/styrning/regelboken/utbildning/regler-och-handlaggningsordning-for-disciplinarenden)
+- **Stockholm University, *Regler och handläggningsordning för disciplinärenden*** (rules and procedure for disciplinary matters, decided 10 February 2022; web page corrected in 2026, including the requirement to attach communication with the student): who reports, to whom, the threshold, what the investigating officer does, and the possible outcomes. [medarbetare.su.se](https://medarbetare.su.se/vart-su/styrning/regelboken/utbildning/regler-och-handlaggningsordning-for-disciplinarenden)
 - **Higher Education Ordinance (Högskoleförordningen), chapter 10**: section 1 defines cheating, section 9 sets the duty to report a well-founded suspicion. [Riksdagen](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/hogskoleforordning-1993100_sfs-1993-100/)
 
 ## Stockholm University guidance
 
-- **Teaching support for staff**, including SU's advice on AI chatbots and examination: avoid relying on unsupervised home exams, add oral or sit-down parts, and note that changing the form of examination may need a syllabus revision. [su.se/staff](https://su.se/staff/services/teaching)
+- **Teaching support for staff**, including SU's advice on AI chatbots and examination: teachers decide which use is allowed; handing in essentially unedited chatbot text is normally cheating; suspicions are handled like other cheating; avoid relying on unsupervised home exams, add oral or sit-down parts, and note that changing the form of examination may need a syllabus revision. [su.se/staff](https://su.se/staff/services/teaching)
 - **AI resources at Stockholm University**: Microsoft 365 Copilot Chat for staff, and the limits on confidential information. [medarbetare.su.se](https://medarbetare.su.se/en/support-and-service/it/ai-resources-at-stockholm-university)
 - **AI detection in Inspera will not be activated** (staff news, September 2025). [medarbetare.su.se](https://medarbetare.su.se/en/our-su/staff-information/staff-news/news-archive/2025-09-25-ai-detection-in-inspera-originality-will-not-be-activated)
 

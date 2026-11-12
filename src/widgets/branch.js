@@ -74,7 +74,7 @@ You've lost 15 minutes and gained a student who knows you read their work. That'
 
 What to do:
 - Stop the conversation about what happened: that's for the investigating officer.
-- Write down what you asked and what Sam said, the same day.
+- Write down what you asked and what Sam said, the same day, and keep your emails. The communication with Sam is attached to the report.
 - Keep the brief, the reference check and the seminar notes.
 - Tell Sam it will be reported and that someone else decides, not you.
 - Wait to grade the brief until the case is closed (SU's recommendation).
