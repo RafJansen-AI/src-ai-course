@@ -17,7 +17,7 @@ minutes: 3
 | Checking whether the references in a student's list exist | Yes | Paste only the reference list, no name. Confirm every flagged reference yourself. See below. |
 | Letting AI write the feedback, which you lightly edit | No | Not your feedback. Only as a clearly announced experiment. |
 | Asking AI what grade a submission deserves | No | Not even as a second opinion. [[rule:t-3b]] |
-| Pasting unpublished theses or health information into a free tool | No | Sensitive data stays out of unapproved tools. [[rule:t-4]] |
+| Pasting unpublished theses or health information into an AI tool | No | Sensitive data stays out of all AI tools for now, approved ones included. [[rule:t-4]] |
 
 :::tip Checking reference lists
 Running a reference list through a chatbot with web search is a quick way to catch invented references, and we encourage it. It's a routine procedural check, the kind the [[EU AI Act]] doesn't treat as high-risk. Keep it apart from grading: you're checking whether sources exist, not judging the work, and you confirm each flagged reference by hand before it affects anything. It won't catch students with paid or agentic tools, which rarely invent references any more.
@@ -30,7 +30,9 @@ Clause 3B says AI must not influence a grade "directly or indirectly", and a fak
 :::beginner Which tool may I use?
 **Microsoft 365 [[Copilot]] Chat**, signed in with your SU account, is in practice the only tool SU has approved. Staff have it, and students most likely do too through their SU Microsoft 365 account. Your data isn't used to train the model. It's a good place to start if you're new to this or unsure about data safety, as long as you keep sensitive data out (below). It's not a requirement: ChatGPT, Claude and others are often stronger, and fine for work that contains no student data or other sensitive information.
 
-Two limits apply whatever you use. **Approved doesn't mean approved for sensitive data:** even Copilot Chat isn't cleared for information at confidentiality level 3 or 4, because chat history is saved. Health information, disciplinary matters and similar stay out of it ([[rule:t-4|teacher policy 4]]). And free tools outside the university login have no data protection. Before you paste student work into anything, check with the SRC staff responsible for [[GDPR]]. See [[approved tool]] and SU's [AI resources page](https://medarbetare.su.se/en/support-and-service/it/ai-resources-at-stockholm-university).
+**Sensitive data stays out of every AI tool, for now.** That includes Copilot Chat: it isn't cleared for information at confidentiality level 3 or 4, because chat history is saved. Health information, disciplinary matters, unpublished theses and similar don't go into any chatbot ([[rule:t-4|teacher policy 4]]). Free tools outside the university login have no data protection at all, so keep names and identifying details out of those too. When unsure, ask the SRC staff responsible for [[GDPR]]. See [[approved tool]] and SU's [AI resources page](https://medarbetare.su.se/en/support-and-service/it/ai-resources-at-stockholm-university).
+
+The one exception is a [[local model]], which runs on your own computer so nothing leaves it. That's only a safe option if you really know what you're doing. If the term is new to you, it isn't for you yet.
 :::
 
 ===

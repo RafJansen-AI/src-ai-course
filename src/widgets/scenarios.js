@@ -50,13 +50,13 @@ export const SCENARIOS = [
     id: 'thesis-upload',
     text: 'Before a supervision meeting you upload a student\'s unpublished thesis draft to a free chatbot to get a quick summary.',
     verdict: 'no',
-    why: 'Unpublished theses are named as sensitive in [[rule:t-4|clause 4]]: don\'t upload them unless the tool is institutionally approved for that data. A free consumer chatbot isn\'t. There\'s a second problem: reading the draft *is* the supervision. Outsourcing it is the "core academic judgement" the policy keeps with you.',
+    why: 'Unpublished theses are named as sensitive in [[rule:t-4|clause 4]]: the policy allows only a tool approved for that data, and at SU no AI tool currently is. So for now, don\'t upload them to any chatbot. There\'s a second problem: reading the draft *is* the supervision. Outsourcing it is the "core academic judgement" the policy keeps with you.',
   },
   {
     id: 'health-email',
     text: 'A student emails about a mental-health crisis and asks for an extension. You paste the email into a chatbot to help you write a kind reply.',
     verdict: 'no',
-    why: 'Health information is the first example of sensitive data in [[rule:t-4|clause 4]]. Don\'t paste it into an AI tool. If you want help with tone, ask a general question with no details ("how do I kindly grant an extension and point to support services?") and write the reply yourself.',
+    why: 'Health information is the first example of sensitive data in [[rule:t-4|clause 4]]. Don\'t paste it into any AI tool, approved or not. If you want help with tone, ask a general question with no details ("how do I kindly grant an extension and point to support services?") and write the reply yourself.',
   },
   {
     id: 'evaluations',
@@ -68,7 +68,7 @@ export const SCENARIOS = [
     id: 'transcribe',
     text: 'You use AI to transcribe handwritten exam answers so they\'re easier to read before you grade them.',
     verdict: 'grey',
-    why: 'Transcription doesn\'t propose a grade, so it isn\'t clearly banned by [[rule:t-3b|clause 3B]]. But exam answers are personal data ([[rule:t-4|clause 4]]), and a transcription error can quietly change what you grade, which is "indirect influence". Our reading: avoid it unless the tool is approved for the data, and always grade from the original.',
+    why: 'Transcription doesn\'t propose a grade, so it isn\'t clearly banned by [[rule:t-3b|clause 3B]]. But exam answers are personal data ([[rule:t-4|clause 4]]), and a transcription error can quietly change what you grade, which is "indirect influence". Our reading: avoid it for now, since no AI tool at SU is cleared for this kind of data, and always grade from the original.',
   },
   {
     id: 'require-ai',
@@ -141,7 +141,7 @@ export default function scenarios(el, { store }) {
       ${strictMisses.length ? `<p>Worth a second look, because these are firm "no"s in the policy:</p><ul>${strictMisses.map((s) => `<li><button type="button" class="btn ghost" data-jump="${s.id}">${esc(short(s.text))}</button></li>`).join('')}</ul>` : '<p>You didn\'t call anything allowed that the policy rules out. Good.</p>'}
       <p>The three rules that decide most cases:</p>
       <ol><li><strong>AI stays out of grades</strong>, before and during grading, including "second opinions". Language polish after the grade is fine.</li>
-      <li><strong>Sensitive student data stays out of unapproved tools.</strong> Health, discipline, unpublished theses.</li>
+      <li><strong>Sensitive student data stays out of AI tools</strong>, for now all of them. Health, discipline, unpublished theses.</li>
       <li><strong>Your judgement, your words, your name.</strong> AI can help with wording; it can't do the thinking students expect from you. Say how you used it.</li></ol>
       <p style="margin:0"><button type="button" class="btn small secondary" data-again>Go through the cases again</button></p></div>`;
     el.querySelectorAll('[data-jump]').forEach((b) => b.addEventListener('click', () => {

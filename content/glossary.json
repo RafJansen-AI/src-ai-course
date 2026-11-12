@@ -91,11 +91,12 @@
       "cleared tool",
       "cleared tools"
     ],
-    "short": "An AI tool the university has cleared for a particular kind of data. Approval depends on the data: a tool may be fine for public text but not for student work.",
-    "more": "At SU, that is in practice Microsoft 365 Copilot Chat on the university login, and even that isn't cleared for information at confidentiality level 3 or 4. Using other tools isn't forbidden, but keep student work, exam material and personal data out of them. When unsure, check with the SRC staff responsible for GDPR.",
+    "short": "An AI tool the university has cleared for a particular kind of data. Approval depends on the data: a tool can be fine for course material but not for sensitive information.",
+    "more": "At SU, that is in practice Microsoft 365 Copilot Chat on the university login, and it isn't cleared for confidentiality level 3 or 4. So no AI tool is currently approved for sensitive data: keep it out of all of them for now. The exception is a local model, for people who really know what they're doing.",
     "see": [
       "gdpr",
-      "personal-data"
+      "personal-data",
+      "local-model"
     ]
   },
   {
@@ -273,7 +274,7 @@
       "data protection regulation"
     ],
     "short": "The EU's General Data Protection Regulation. It sets rules for collecting, storing and sharing personal data, and applies whenever you handle information about identifiable people.",
-    "more": "Pasting student texts, names or feedback into an AI tool counts as sharing personal data with that service. Only do it in a tool that is approved for it.",
+    "more": "Pasting student texts, names or feedback into an AI tool counts as sharing personal data with that service. Remove identifying details first, and keep sensitive data out of AI tools altogether for now.",
     "see": [
       "personal-data",
       "approved-tool"
@@ -583,6 +584,24 @@
       "llm",
       "bias",
       "training-cutoff"
+    ]
+  },
+  {
+    "id": "local-model",
+    "term": "Local model",
+    "aliases": [
+      "local models",
+      "local ai",
+      "local llm",
+      "run locally",
+      "offline model"
+    ],
+    "short": "An AI model that runs entirely on your own computer instead of on a company's servers, so nothing you type leaves the machine. Free software can run open models on a powerful laptop.",
+    "more": "It's the one safe home for sensitive data, but only if you really know what you're doing: you have to be sure the software runs fully offline, doesn't sync chats to a cloud account, and that the computer itself is secured. Local models are also usually weaker than the big online chatbots. If that sounds unfamiliar, keep sensitive data out of AI altogether.",
+    "see": [
+      "approved-tool",
+      "personal-data",
+      "llm"
     ]
   }
 ]
