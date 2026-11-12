@@ -78,7 +78,7 @@ export default function disclosure(el, { store }) {
     <div class="dc-out"><span class="q-label">Your disclosure line</span>
       <div aria-live="polite" data-out></div></div>
     <div data-warn aria-live="polite"></div>
-    <p class="hint" data-hint hidden>Remove names and anything identifying before pasting student work into a tool that isn't approved for student data.</p>
+    <p class="hint" data-hint hidden>Remove names and anything identifying before pasting student work into any AI tool. Sensitive data stays out altogether.</p>
   </div>`;
 
   const out = el.querySelector('[data-out]');

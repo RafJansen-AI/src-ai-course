@@ -18,6 +18,7 @@ An interactive course on generative AI for teaching staff at the Stockholm Resil
 
 | Date | Change |
 | --- | --- |
+| 12 Nov 2026 | Data safety: sensitive data stays out of all AI tools for now; local models explained as the one exception, for experienced users only. |
 | 12 Nov 2026 | Microsoft 365 Copilot Chat named as SU's approved tool: a safe start for beginners, not a requirement. |
 | 12 Nov 2026 | Chapter 7 checked against SU's disciplinary rules: a new slide on what happens after a report, and SU's view on AI cheating. |
 | 12 Nov 2026 | Every text you copy from the course (lecture script, brief text, kit) ends with an AI disclosure line. Site is link-only. |
