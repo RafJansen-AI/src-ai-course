@@ -30,7 +30,7 @@ Here's a short seminar question and four answers. Which were written by a studen
 
 ## So what do we do?
 
-If you can't tell by reading, and you can't use [[AI detectors]] (some have become good, but SRC policy rules them out for now), then under our rules unauthorised AI use on take-home work is, in practice, very hard to spot. What works:
+If you can't tell by reading, and you can't use [[AI detectors]] (some have become good, but using them would be [[high-risk|high-risk-ai-system]] use under the EU AI Act, and SRC stays clear of anything high-risk for now), then under our rules unauthorised AI use on take-home work is, in practice, very hard to spot. What works:
 
 1. **Clear rules, before the course starts.** For most courses that means the SRC student rules, made concrete for each assignment. Chapters 3 and 4.
 2. **Examine what matters in the room.** In-class exams, in-class writing, oral checks: the decisive part of the assessment happens where you can see it. This is the main takeaway of the whole course. Chapter 5.

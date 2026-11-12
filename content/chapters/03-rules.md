@@ -11,7 +11,7 @@ SRC has two AI policies that are meant to be read together: one for **teaching s
 
 1. **Use AI to support your teaching, not to replace your judgement.** Drafting instructions, examples, rubrics and exam questions is fine. Supervision, approvals and assessment decisions stay yours. [[rule:t-1]]
 2. **You're responsible for everything you send students, and you say how you used AI.** One sentence is enough: which tool, what for. [[rule:t-2]]
-3. **AI stays out of grading.** It can't propose, justify or influence a grade, not even as a second opinion. Language polish of your comments *after* the grade is decided is fine. And no [[AI detectors]] for now: SRC treats them as high-risk use under the [[EU AI Act]]. [[rule:t-3b]] [[rule:t-3c]]
+3. **AI stays out of grading.** It can't propose, justify or influence a grade, not even as a second opinion. Language polish of your comments *after* the grade is decided is fine. And no [[AI detectors]]: they'd be high-risk use under the [[EU AI Act]], and SRC stays clear of anything high-risk for now. [[rule:t-3b]] [[rule:t-3c]]
 4. **Sensitive student data stays out of unapproved tools.** Health information, disciplinary matters, unpublished theses. [[rule:t-4]]
 
 The teacher policy applies to everyone in the same way; it isn't something you adapt for your course. The policy's own picture is useful: treat AI as a colleague who is *knowledgeable, fast and overconfident, but not accountable* for your students, your course or your grades.

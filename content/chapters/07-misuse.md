@@ -10,7 +10,7 @@ minutes: 6
 You'll sometimes have a strong feeling that work isn't the student's own. The feeling isn't evidence. Here's what's in your hands:
 
 **You can't:**
-- Use an [[AI detector]]. SRC rules them out for now ([[rule:t-3c|teacher policy 3C]]).
+- Use an [[AI detector]]. Using one would be high-risk use under the [[EU AI Act]], and SRC stays clear of anything high-risk for now ([[rule:t-3c|teacher policy 3C]]).
 - Decide that a student cheated, or whether they meant to. At SU that's for the vice-chancellor and the disciplinary board.
 - Settle a suspicion on graded work yourself, for example by failing it "for AI use", lowering the grade quietly, or agreeing with the student that it stays between you.
 

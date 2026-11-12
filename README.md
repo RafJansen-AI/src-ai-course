@@ -67,6 +67,19 @@ npm run preview:artifact   # single-file preview in dist-single/preview.html
 
 ## Deploying on Cloudflare
 
-The site is fully static. In the Cloudflare dashboard: **Workers & Pages → Create → Import a repository**,
-pick this repo, build command `npm run build`, deploy command `npx wrangler deploy` (uses `wrangler.jsonc`,
-which serves `dist/`). Every push to `main` then deploys; branches get preview URLs.
+In the Cloudflare dashboard: **Workers & Pages → Create → Import a repository**, pick this repo,
+build command `npm run build`, deploy command `npx wrangler deploy` (uses `wrangler.jsonc`).
+Every push to `main` then deploys; branches get preview URLs. Free plan is enough.
+
+### Link-only access
+
+A small Worker (`worker/index.js`) sits in front of the static files. Visitors need the link
+with the key, `https://<site>/?k=<ACCESS_KEY>`; it sets a cookie for a year and removes the key
+from the address bar. Without key or cookie they see a short "only available through its link" page.
+Everything is served with `noindex`, and `robots.txt` disallows all.
+
+Set the key once: **Worker → Settings → Variables and Secrets → Add → Secret**, name `ACCESS_KEY`,
+a long random value (e.g. `openssl rand -hex 16`). Until it's set, the site shows "not set up yet".
+To lock out everyone who has the old link, change the secret and send the new link.
+
+This is a shared link, not per-person access: anyone who has the link can get in and pass it on.

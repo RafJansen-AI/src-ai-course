@@ -34,7 +34,7 @@ The SRC rules will change as tools change. The **Rules** button always shows the
 
 ## Three things to take with you
 
-1. **Under our rules, unauthorised AI use is hard to spot.** SRC rules out detectors for now, and good AI text doesn't look like AI. Don't build your course on catching it.
+1. **Under our rules, unauthorised AI use is hard to spot.** SRC rules out detectors for now (they'd be high-risk use under the EU AI Act), and good AI text doesn't look like AI. Don't build your course on catching it.
 2. **So examine the important part in the room.** In-class writing, in-class exams, oral checks, seminars where students explain their own work. Let take-home work be practice and preparation.
 3. **Keep the SRC rules, make them concrete, and say them on day one.** Adapt them only if you know these tools well and have a reason.
 
