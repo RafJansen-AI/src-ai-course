@@ -1,0 +1,9 @@
+{
+  // Cloudflare Workers static-assets deploy. The site is fully static.
+  "name": "src-ai-course",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}

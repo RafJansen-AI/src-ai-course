@@ -1,0 +1,19 @@
+{
+  "name": "src-ai-course",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:preview": "vite build --mode single",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8",
+    "vite-plugin-singlefile": "^2.3.4"
+  },
+  "dependencies": {
+    "marked": "^18.2.0"
+  }
+}
