@@ -10,7 +10,7 @@ minutes: 4
 <!-- TODO (Raf): replace this paragraph with the SRC case once it has been discussed with the course teachers. -->
 A pattern teachers everywhere now report: written seminar texts that are fine. Fluent, well structured, properly referenced. Then, in the seminar, students can't explain the concepts their own texts were built on.
 
-That's the problem in one example. A take-home text used to be decent evidence that a student had done the thinking. It isn't any more. A chatbot can produce a passing seminar text, report or piece of code in a couple of minutes, and the tools get better every few months.
+That's the problem in one example. A take-home text used to be decent evidence that a student had done the thinking. It isn't any more. A [[chatbot]] can produce a passing seminar text, report or piece of code in a couple of minutes, and the tools get better every few months.
 
 :::beginner What do you mean by "a chatbot"?
 Tools like ChatGPT, Microsoft Copilot, Claude and Gemini. You type a question or instruction (a [[prompt]]) and get fluent text back. They're built on [[large language models]], which chapter 2 explains in plain terms.

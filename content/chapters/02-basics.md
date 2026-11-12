@@ -8,7 +8,7 @@ track: beginner
 ---
 ## Prediction, not knowledge
 
-A chatbot like ChatGPT or Copilot runs on a [[large language model]]. Stripped down, it's a very large autocomplete: trained on huge amounts of text to predict which words come next, then tuned to follow instructions and be helpful.
+A chatbot like [[ChatGPT]] or [[Copilot]] runs on a [[large language model]], a kind of [[generative AI]]. Stripped down, it's a very large autocomplete: trained on huge amounts of text (its [[training data]]) to predict which words, or [[tokens|token]], come next, then tuned to follow instructions and be helpful.
 
 Three things follow from that, and they explain most of what surprises people:
 

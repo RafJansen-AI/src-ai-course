@@ -14,7 +14,7 @@ SRC's student policy is the default for every course. For most teachers, the bes
 - **Whatever you choose, write it down and say it.** In the syllabus, in every brief, and in the first lecture.
 
 :::rule The most important thing in this chapter
-Have your AI rules ready **before the course starts**, and go through them with students in the first session. Students who were never told clearly can't fairly be failed for breaking the rules.
+Have your AI rules ready **before the course starts**, and go through them with students in the first session. Rules students were never told clearly are unfair to them, and they make any later report much weaker.
 :::
 
 ===

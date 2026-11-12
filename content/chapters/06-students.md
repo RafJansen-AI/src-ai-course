@@ -7,7 +7,7 @@ minutes: 5
 ---
 ## Say it on day one
 
-Students can only follow rules they've been told. And they can't be fairly failed for breaking rules nobody showed them. So the first message is simple: **have your AI rules ready before the course starts, and go through them in the first session.**
+Students can only follow rules they've been told. Rules nobody showed them are unfair, and they make any later report weak. So the first message is simple: **have your AI rules ready before the course starts, and go through them in the first session.**
 
 Here's a five-minute script built from your course and the SRC rules. Adapt it to suit your needs.
 
@@ -51,7 +51,7 @@ The SRC rules allow AI as a tutor. Most students don't know what that looks like
 - *"Here's my draft. Don't rewrite it. Point out where the argument is weakest and why."*
 - *"What would a researcher from [another discipline] say is missing from this analysis?"*
 
-### Built-in learning modes
+## Built-in learning modes
 
 The big chatbots now have a mode that tutors instead of answering: it asks questions, gives hints and checks understanding. Worth showing in class, for a minute each:
 

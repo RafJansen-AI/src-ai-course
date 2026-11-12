@@ -8,7 +8,7 @@ An interactive course on generative AI for teaching staff at the Stockholm Resil
 
 **Last reviewed:** 12 November 2026. Content about what AI tools can do is reviewed each term.
 
-**Your data:** everything you enter stays in your own browser. Nothing is sent to a server, and there are no accounts or tracking. Clearing your browser data, or "Start over" in the chapter menu, removes it.
+**Your data:** everything you enter stays in your own browser. Nothing you enter is sent to a server (the only thing your browser sends is an access cookie for the link), and there are no accounts or tracking. Clearing your browser data, or "Start over" in the chapter menu, removes it.
 
 **How it was made:** a joint project between Raf Jansen (SRC) and Fable 5.2, an AI model from Anthropic, which was used extensively: for drafting text, building the interactive parts and code, and checking the site. Raf reviewed the content and is responsible for it. Some ideas build on Eva Mårell-Olsson's presentation *AI in higher education* (2026) and on guidance from Umeå University's Department of Education. Background reading is on the [sources page](#/p/sources).
 
@@ -18,8 +18,9 @@ An interactive course on generative AI for teaching staff at the Stockholm Resil
 
 | Date | Change |
 | --- | --- |
+| 12 Nov 2026 | Second audit fixes: consistent wording on untold students, more glossary links, heading order, build check on GitHub. |
 | 12 Nov 2026 | Data safety: sensitive data stays out of all AI tools for now; local models explained as the one exception, for experienced users only. |
-| 12 Nov 2026 | Microsoft 365 Copilot Chat named as SU's approved tool: a safe start for beginners, not a requirement. |
+| 12 Nov 2026 | Microsoft 365 Copilot Chat named as SU's approved tool: a safer start for beginners, not a requirement. |
 | 12 Nov 2026 | Chapter 7 checked against SU's disciplinary rules: a new slide on what happens after a report, and SU's view on AI cheating. |
 | 12 Nov 2026 | Every text you copy from the course (lecture script, brief text, kit) ends with an AI disclosure line. Site is link-only. |
 | 12 Nov 2026 | After review: chapter 7 follows SU's reporting procedure (investigating officer, Higher Education Ordinance 10:9) and says where leniency fits. Detectors described as ruled out for now. Reference-list checks, learning modes, SU's Copilot, syllabus and study-adaptation notes, assignments as exam prep. NotebookLM is now Gemini Notebook. Closing slide, sources page, accessibility fixes. |

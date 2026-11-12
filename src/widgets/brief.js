@@ -57,7 +57,7 @@ export default function brief(el, { store }) {
       </div>
       <div class="card brief-doc" aria-live="polite">
         <p class="eyebrow" style="margin:0 0 .4rem">${goods.length ? `Brief with ${goods.length} fix${goods.length === 1 ? '' : 'es'}` : 'The brief as it is'}</p>
-        <h3>${esc(BRIEF_BEFORE[0])}</h3>
+        <h2 class="h3">${esc(BRIEF_BEFORE[0])}</h2>
         ${BRIEF_BEFORE.slice(1).map((p) => `<p>${esc(p)}</p>`).join('')}
         ${goods.length ? `<div class="brief-added">${goods.map((f) => `<p><mark>${esc(f.add)}</mark></p>`).join('')}</div>` : '<p class="hint">Nothing in this brief says anything about AI. Students will guess.</p>'}
       </div></div>`;

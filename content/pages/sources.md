@@ -16,7 +16,6 @@ The SRC policies come first; everything else here is background. Links were chec
 
 - **Teaching support for staff**, including SU's advice on AI chatbots and examination: teachers decide which use is allowed; handing in essentially unedited chatbot text is normally cheating; suspicions are handled like other cheating; avoid relying on unsupervised home exams, add oral or sit-down parts, and note that changing the form of examination may need a syllabus revision. [su.se/staff](https://su.se/staff/services/teaching)
 - **AI resources at Stockholm University**: Microsoft 365 Copilot Chat for staff, and the limits on confidential information. [medarbetare.su.se](https://medarbetare.su.se/en/support-and-service/it/ai-resources-at-stockholm-university)
-- **AI detection in Inspera will not be activated** (staff news, September 2025). [medarbetare.su.se](https://medarbetare.su.se/en/our-su/staff-information/staff-news/news-archive/2025-09-25-ai-detection-in-inspera-originality-will-not-be-activated)
 
 ## EU AI Act
 

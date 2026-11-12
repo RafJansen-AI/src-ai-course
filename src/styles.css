@@ -69,7 +69,7 @@ body {
 h1, h2, h3, h4 { color: var(--heading); line-height: 1.25; margin: 0 0 .6em; }
 h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 900; letter-spacing: -.01em; }
 h2, h1.slide-title { font-size: clamp(1.4rem, 3vw, 1.8rem); font-weight: 700; letter-spacing: 0; }
-h3 { font-size: 1.15rem; font-weight: 700; }
+h3, h2.h3 { font-size: 1.15rem; font-weight: 700; }
 p, ul, ol { margin: 0 0 1em; }
 a { color: var(--fire-ink); text-underline-offset: .15em; }
 a:hover { text-decoration-thickness: 2px; }
@@ -363,7 +363,7 @@ label.field .hint { color: var(--text-soft); font-weight: 400; }
 .fix-fb { font-size: .88rem; margin: .35rem 0 0 .2rem; padding-left: .6rem; border-left: 3px solid var(--green); }
 .fix-fb.bad { border-color: var(--red); }
 .brief-doc { font-size: .95rem; }
-.brief-doc h3 { font-size: 1.05rem; }
+.brief-doc h3, .brief-doc h2.h3 { font-size: 1.05rem; }
 .brief-added mark { background: var(--fire-soft); color: inherit; padding: .1rem .2rem; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 
 /* ---------- branching case ---------- */
@@ -378,7 +378,7 @@ label.field .hint { color: var(--text-soft); font-weight: 400; }
 
 /* ---------- kit ---------- */
 .kit { display: grid; gap: 1rem; }
-.kit-sec h3 { margin-top: 0; }
+.kit-sec h3, .kit-sec h2.h3 { margin-top: 0; }
 .kit-sec > :last-child { margin-bottom: 0; }
 .kit-actions { display: flex; gap: .6rem; flex-wrap: wrap; align-items: center; }
 .slide input[type="checkbox"] { accent-color: var(--blue); }

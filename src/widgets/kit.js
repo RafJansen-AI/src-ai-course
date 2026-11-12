@@ -26,7 +26,7 @@ export function lectureScript(c) {
   if (whys.length) lines.push(`Why the limits: an assignment exists to show that you can do something yourself. ${whys.slice(0, 2).map((a) => `In ${a.name || 'one assignment'}, that's to ${a.why.trim().replace(/\.$/, '')}.`).join(' ')} If AI does that part, you haven\'t learned it, and the grade means nothing.`);
   else lines.push('Why the limits: an assignment exists to show that you can do something yourself. If AI does that part, you haven\'t learned it, and the grade means nothing, for you or for anyone who relies on it later.');
   lines.push('When AI meaningfully shaped your work, say so: which tool, what for, and how it changed what you handed in. Two or three sentences is enough. Saying it doesn\'t make a forbidden use OK, though.');
-  lines.push('I won\'t use AI detectors. Under EU law they count as high-risk, and SRC stays clear of anything high-risk for now. What I will do is ask you about your work, and an important part of the assessment happens in the room: in seminars, in class, or in a short conversation. The take-home assignments are your preparation for that. If AI does them for you, you\'ll find out when it counts. If you can\'t explain what you handed in, it doesn\'t show the learning outcomes, and it won\'t pass. If something looks like cheating, I\'m required to report it, and someone else decides.');
+  lines.push('I won\'t use AI detectors. SRC treats them as high-risk use under the EU AI Act and stays clear of anything high-risk for now. What I will do is ask you about your work, and an important part of the assessment happens in the room: in seminars, in class, or in a short conversation. The take-home assignments are your preparation for that. If AI does them for you, you\'ll find out when it counts. If you can\'t explain what you handed in, it doesn\'t show the learning outcomes, and it won\'t pass. If something looks like cheating, I\'m required to report it, and someone else decides.');
   lines.push('Used well, these tools can help you learn: ask them to explain, to quiz you, to argue against you. If you\'re unsure whether something is allowed, ask me first. Asking is always fine.');
   lines.push(AI_NOTE);
   return lines.join('\n\n');
@@ -117,22 +117,22 @@ export default function kit(el, { store }) {
   const { tips, exercises } = tipsFor(c);
   const redesigns = c.assessments.filter((a) => (a.redesign || []).length);
   el.innerHTML = `<div class="kit">
-    <section class="card kit-sec"><h3>1. Text for the syllabus and briefs</h3>
+    <section class="card kit-sec"><h2 class="h3">1. Text for the syllabus and briefs</h2>
       ${set.length ? set.map((a) => `<div class="kit-item"><p class="q-label" style="margin:0">${esc(a.name || 'Untitled')} <span class="pill">${esc(typeLabel(a.type))} · ${esc(ruleLabel(a))}</span></p><p class="statement">${esc(statementFor(a))}</p></div>`).join('')
         : '<p>No assessments yet. <a href="#/c/start/2">Add your course in chapter 0.</a></p>'}
       ${set.length ? `<p class="statement">${esc(AI_NOTE)}</p>` : ''}
       <p class="hint">${esc(AI_NOTE_HINT)}</p>
     </section>
-    <section class="card kit-sec"><h3>2. Practical tips and exercises</h3>
+    <section class="card kit-sec"><h2 class="h3">2. Practical tips and exercises</h2>
       ${tips.length ? `<ul>${tips.map(([n, t]) => `<li><strong>${esc(n)}:</strong> ${esc(t)}</li>`).join('')}</ul>` : ''}
       <p class="q-label">Exercises you could run</p>
       <ul>${exercises.map((e) => `<li><strong>${esc(e.title)}.</strong> ${esc(e.text)}</li>`).join('')}</ul>
     </section>
-    <section class="card kit-sec"><h3>3. Assessment changes you plan</h3>
+    <section class="card kit-sec"><h2 class="h3">3. Assessment changes you plan</h2>
       ${redesigns.length ? `<ul>${redesigns.map((a) => `<li><strong>${esc(a.name)}:</strong> ${a.redesign.map((k) => esc(REDESIGNS[k]?.title || '')).join('; ')}</li>`).join('')}</ul>` : '<p class="hint">None chosen. <a href="#/c/stress-test/1">Stress-test your assessments in chapter 5.</a></p>'}
     </section>
-    <section class="card kit-sec"><h3>4. First lecture (about 5 minutes)</h3><div class="statement">${esc(lectureScript(c))}</div></section>
-    <section class="card kit-sec"><h3>5. Your own disclosure line</h3>
+    <section class="card kit-sec"><h2 class="h3">4. First lecture (about 5 minutes)</h2><div class="statement">${esc(lectureScript(c))}</div></section>
+    <section class="card kit-sec"><h2 class="h3">5. Your own disclosure line</h2>
       ${st.disclosure?.text ? `<p class="statement">${esc(st.disclosure.text)}</p>` : '<p class="hint">Not made yet. <a href="#/c/own-use/1">Make one in chapter 8.</a></p>'}</section>
     <div class="kit-actions">
       <button type="button" class="btn" data-copyall>Copy the whole kit</button>
