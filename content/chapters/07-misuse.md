@@ -48,9 +48,6 @@ Work through it. Some paths are dead ends on purpose.
 - **Someone else decides.** The vice-chancellor or the disciplinary board can close the case without action, give a warning, or suspend the student for up to six months. A case can be closed without action, and the mitigating facts you put in the report help decide that.
 - **The report includes the conversation.** SU's rules (as corrected in 2026) require that the communication with the student about the suspicion is attached. That's another reason to write things down as you go.
 
-:::note SU and SRC on detectors
-SU's general guidance says detectors "can possibly be used as part of an investigation", alongside other material. SRC's teacher policy is stricter and rules them out for now ([[rule:t-3c|teacher policy 3C]]). At SRC, the SRC policy applies.
-:::
 
 ===
 
