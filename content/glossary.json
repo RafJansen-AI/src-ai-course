@@ -92,7 +92,7 @@
       "cleared tools"
     ],
     "short": "An AI tool the university has cleared for a particular kind of data. Approval depends on the data: a tool may be fine for public text but not for student work.",
-    "more": "At SU, staff have Microsoft 365 Copilot Chat on the university login, but not for information at confidentiality level 3 or 4. Don't assume a tool is approved because it's widely used or free. Before putting student work, exam material or personal data into any tool, check with the SRC staff responsible for GDPR.",
+    "more": "At SU, that is in practice Microsoft 365 Copilot Chat on the university login, and even that isn't cleared for information at confidentiality level 3 or 4. Using other tools isn't forbidden, but keep student work, exam material and personal data out of them. When unsure, check with the SRC staff responsible for GDPR.",
     "see": [
       "gdpr",
       "personal-data"
@@ -178,7 +178,7 @@
       "copilot chat"
     ],
     "short": "Microsoft's name for its AI assistants, which appear in Windows, Edge and Office apps. Several different products share the name, and what each can access and store varies.",
-    "more": "At SU, all staff have Microsoft 365 Copilot Chat when signed in with the university account; your data isn't used for training. Even so, information at confidentiality level 3 or 4 must not go into it, because chat history is saved. Free versions outside the university login have no such protection.",
+    "more": "At SU, Microsoft 365 Copilot Chat, signed in with the university account, is in practice the only approved AI tool. Staff have it, and students most likely do too. Your data isn't used for training. It's a good start for beginners unsure about data safety, but not a requirement; other chatbots are often stronger. Even Copilot Chat isn't cleared for information at confidentiality level 3 or 4, because chat history is saved.",
     "see": [
       "approved-tool",
       "chatbot"
