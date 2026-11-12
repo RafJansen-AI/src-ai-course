@@ -1,0 +1,585 @@
+[
+  {
+    "id": "academic-misconduct",
+    "term": "Academic misconduct",
+    "aliases": [
+      "cheating",
+      "academic dishonesty",
+      "plagiarism"
+    ],
+    "short": "Breaking the rules for honest academic work, such as plagiarism or submitting work that is not your own. Universities set what counts, including which AI use is allowed.",
+    "more": "Suspected misconduct goes through the university's formal procedure, not a private verdict. Say clearly in each assignment which AI use is allowed, or students and staff end up arguing about unwritten rules.",
+    "see": [
+      "ai-detector",
+      "disclosure"
+    ]
+  },
+  {
+    "id": "ai",
+    "term": "AI (artificial intelligence)",
+    "aliases": [
+      "ai",
+      "artificial intelligence",
+      "a.i."
+    ],
+    "short": "Software that does tasks we usually link to human thinking, such as writing, recognising images or translating. In everyday talk it mostly means tools built with machine learning.",
+    "more": "The label covers very different things, from spam filters to chatbots. When a colleague or student says \"I used AI\", ask which tool and for what.",
+    "see": [
+      "machine-learning",
+      "generative-ai"
+    ]
+  },
+  {
+    "id": "ai-agent",
+    "term": "AI agent",
+    "aliases": [
+      "ai agents",
+      "agent",
+      "agents",
+      "agentic ai",
+      "agentic"
+    ],
+    "short": "An AI system that carries out a multi-step task on its own, for example browsing, running code or filling in forms, rather than only answering one question at a time.",
+    "more": "Agents can make mistakes that compound over many steps, and they may act with your accounts or files. Be careful about what access you give them, especially to student or personal data.",
+    "see": [
+      "llm",
+      "personal-data"
+    ]
+  },
+  {
+    "id": "ai-detector",
+    "term": "AI detector",
+    "aliases": [
+      "ai detectors",
+      "ai detection",
+      "ai-detection",
+      "ai checker",
+      "ai checkers",
+      "detector",
+      "detectors"
+    ],
+    "short": "A tool that claims to tell whether a text was written by AI. In practice these tools are unreliable and regularly flag human writing as machine-made.",
+    "more": "A false accusation can seriously harm a student, and non-native English writers are flagged more often. SRC teachers must not use them at all. Use process evidence and conversation instead.",
+    "see": [
+      "process-evidence",
+      "academic-misconduct",
+      "oral-defence"
+    ]
+  },
+  {
+    "id": "ai-literacy",
+    "term": "AI literacy",
+    "aliases": [
+      "ai-literacy",
+      "ai literate"
+    ],
+    "short": "Knowing enough about how AI tools work, what they get wrong and what rules apply, to use them sensibly and to judge their output critically.",
+    "more": "The EU AI Act expects organisations to make sure their staff have a sufficient level of AI literacy. This course is part of building it, for you and for the students you teach.",
+    "see": [
+      "ai-act",
+      "hallucination"
+    ]
+  },
+  {
+    "id": "approved-tool",
+    "term": "Approved tool",
+    "aliases": [
+      "approved tools",
+      "approved ai tool",
+      "approved ai tools",
+      "cleared tool",
+      "cleared tools"
+    ],
+    "short": "An AI tool the university has cleared for a particular kind of data. Approval depends on the data: a tool may be fine for public text but not for student work.",
+    "more": "Do not assume a tool is approved because it is widely used or free. Before putting student work, exam material or any personal data into a tool, check with SU or SRC.",
+    "see": [
+      "gdpr",
+      "personal-data"
+    ]
+  },
+  {
+    "id": "bias",
+    "term": "Bias",
+    "aliases": [
+      "biases",
+      "biased",
+      "algorithmic bias"
+    ],
+    "short": "A systematic skew in AI output, usually inherited from the data the system learned from. It can favour some languages, regions, viewpoints or groups of people over others.",
+    "more": "Models tend to reflect the English-language, Western material they saw most of. Check AI-generated examples, summaries and feedback for what they leave out, especially for sustainability topics with strong regional differences.",
+    "see": [
+      "training-data",
+      "high-risk-ai-system"
+    ]
+  },
+  {
+    "id": "chatbot",
+    "term": "Chatbot",
+    "aliases": [
+      "chatbots",
+      "chat bot",
+      "ai assistant",
+      "ai assistants"
+    ],
+    "short": "A program you talk to by typing or speaking. Today's AI chatbots are built on large language models and reply in natural language to whatever you write.",
+    "more": "A chatbot's answers sound like a person's, which makes them easy to over-trust. Treat the reply as a draft from a fast but unreliable assistant, not as a source.",
+    "see": [
+      "llm",
+      "prompt"
+    ]
+  },
+  {
+    "id": "chatgpt",
+    "term": "ChatGPT",
+    "aliases": [
+      "chat gpt",
+      "chatgpt's"
+    ],
+    "short": "A chatbot made by the US company OpenAI. It was the first widely used AI chatbot, and many people use its name to mean AI chatbots in general.",
+    "see": [
+      "chatbot",
+      "llm"
+    ]
+  },
+  {
+    "id": "claude",
+    "term": "Claude",
+    "aliases": [
+      "claude's"
+    ],
+    "short": "A family of AI models and a chatbot made by the US company Anthropic.",
+    "see": [
+      "chatbot",
+      "llm"
+    ]
+  },
+  {
+    "id": "context-window",
+    "term": "Context window",
+    "aliases": [
+      "context length",
+      "context limit",
+      "context windows"
+    ],
+    "short": "The amount of text a model can take in at once: your prompt, any uploaded files and the conversation so far. Beyond that limit it loses or ignores material.",
+    "more": "In a long chat or with a very long document, the model may quietly drop or blur earlier parts. If you ask for a summary of a thesis or a full reading list, check that nothing was skipped.",
+    "see": [
+      "token",
+      "prompt"
+    ]
+  },
+  {
+    "id": "copilot",
+    "term": "Copilot",
+    "aliases": [
+      "microsoft copilot",
+      "m365 copilot",
+      "copilot chat"
+    ],
+    "short": "Microsoft's name for its AI assistants, which appear in Windows, Edge and Office apps. Several different products share the name, and what each can access and store varies.",
+    "more": "Because the name covers different products, \"we have Copilot\" does not settle whether a use is approved. Check which version you have and what data it is cleared for.",
+    "see": [
+      "approved-tool",
+      "chatbot"
+    ]
+  },
+  {
+    "id": "deep-research",
+    "term": "Deep research",
+    "aliases": [
+      "deep research tools",
+      "research agent",
+      "research agents"
+    ],
+    "short": "AI tools that search the web for many minutes, read what they find and write a long report with links. Several chatbots now offer this as a mode.",
+    "more": "The reports look like literature reviews but can cite weak sources, misread them or leave out key work. A student can produce one in minutes, so ask for the reasoning behind the sources chosen.",
+    "see": [
+      "hallucination",
+      "ai-agent"
+    ]
+  },
+  {
+    "id": "disclosure",
+    "term": "Disclosure",
+    "aliases": [
+      "disclose",
+      "disclosing",
+      "ai disclosure",
+      "declaration",
+      "ai statement"
+    ],
+    "short": "Stating which AI tool you used and what you used it for, for example brainstorming, language editing or analysing data. Students and staff can both do it.",
+    "more": "A short, specific statement works better than a blanket ban or a vague \"AI was used\". Decide what you expect in each assignment: tool, purpose, and what the student changed afterwards.",
+    "see": [
+      "academic-misconduct",
+      "process-evidence"
+    ]
+  },
+  {
+    "id": "ai-act",
+    "term": "EU AI Act",
+    "aliases": [
+      "ai act",
+      "eu ai act",
+      "the ai act",
+      "artificial intelligence act"
+    ],
+    "short": "EU law that regulates AI systems according to risk, with stricter duties for higher-risk uses. Its rules apply in stages, and Sweden and Stockholm University must follow it.",
+    "more": "For teaching, the main point is that some uses, such as AI judging student work, are treated as high risk. Check current SU guidance rather than relying on a summary.",
+    "see": [
+      "high-risk-ai-system",
+      "ai-literacy",
+      "gdpr"
+    ]
+  },
+  {
+    "id": "fine-tuning",
+    "term": "Fine-tuning",
+    "aliases": [
+      "fine tuning",
+      "fine-tuned",
+      "fine tuned",
+      "finetuning"
+    ],
+    "short": "Training an existing model a bit further on a smaller, specialised set of examples, so it does one job better or writes in a particular style.",
+    "more": "It is different from simply uploading documents to a chat. Fine-tuning changes the model itself, and it is something developers do, not an everyday teaching task.",
+    "see": [
+      "training-data",
+      "rag"
+    ]
+  },
+  {
+    "id": "formative-summative",
+    "term": "Formative and summative assessment",
+    "aliases": [
+      "formative assessment",
+      "summative assessment",
+      "formative",
+      "summative"
+    ],
+    "short": "Formative assessment helps students learn along the way through feedback and low stakes. Summative assessment judges what they have achieved, for a grade or pass.",
+    "more": "AI use is easier to allow in formative work, where the point is learning. Summative tasks are where you need to be sure the work shows what the student can do, and where AI marking raises legal issues.",
+    "see": [
+      "high-risk-ai-system",
+      "process-evidence"
+    ]
+  },
+  {
+    "id": "gdpr",
+    "term": "GDPR",
+    "aliases": [
+      "general data protection regulation",
+      "data protection regulation"
+    ],
+    "short": "The EU's General Data Protection Regulation. It sets rules for collecting, storing and sharing personal data, and applies whenever you handle information about identifiable people.",
+    "more": "Pasting student texts, names or feedback into an AI tool counts as sharing personal data with that service. Only do it in a tool that is approved for it.",
+    "see": [
+      "personal-data",
+      "approved-tool"
+    ]
+  },
+  {
+    "id": "gemini",
+    "term": "Gemini",
+    "aliases": [
+      "google gemini",
+      "gemini's"
+    ],
+    "short": "Google's family of AI models and its chatbot of the same name, which also appears in Google products such as Search and Workspace.",
+    "see": [
+      "chatbot",
+      "llm"
+    ]
+  },
+  {
+    "id": "generative-ai",
+    "term": "Generative AI",
+    "aliases": [
+      "genai",
+      "gen ai",
+      "gen-ai",
+      "generative artificial intelligence",
+      "genai tools"
+    ],
+    "short": "AI that produces new content, such as text, images, audio or code, in response to a prompt. ChatGPT-style chatbots are the best-known example.",
+    "more": "It produces plausible output, not verified fact. That matters for any assignment where students write, summarise or generate images, because the tool can now do a first draft of all of these.",
+    "see": [
+      "llm",
+      "prompt",
+      "hallucination"
+    ]
+  },
+  {
+    "id": "hallucination",
+    "term": "Hallucination",
+    "aliases": [
+      "hallucinations",
+      "hallucinate",
+      "hallucinates",
+      "hallucinated",
+      "hallucinating"
+    ],
+    "short": "When an AI states something false with complete confidence. The output reads as plausible and fluent but is wrong or invented.",
+    "more": "The classic case is a fabricated reference: a real-looking author, title and journal that do not exist. Ask students to check every citation, and check them yourself when you suspect AI use.",
+    "see": [
+      "llm",
+      "rag"
+    ]
+  },
+  {
+    "id": "high-risk-ai-system",
+    "term": "High-risk AI system",
+    "aliases": [
+      "high-risk ai",
+      "high risk ai",
+      "high-risk ai systems",
+      "high-risk",
+      "high risk"
+    ],
+    "short": "An EU AI Act category for AI uses that can seriously affect people's lives and face strict rules. Annex III lists them, including AI that evaluates learning outcomes.",
+    "more": "This is why SRC policy bans AI from proposing, justifying or influencing a grade, including as a \"second opinion\".",
+    "see": [
+      "ai-act",
+      "formative-summative",
+      "approved-tool"
+    ]
+  },
+  {
+    "id": "llm",
+    "term": "Large language model",
+    "aliases": [
+      "llm",
+      "llms",
+      "large language models",
+      "language model",
+      "language models"
+    ],
+    "short": "The kind of AI behind chatbots such as ChatGPT. It is trained on huge amounts of text to predict what words come next, which lets it write and answer questions.",
+    "more": "It generates likely text rather than looking up facts, which is why it can sound right and be wrong. Keep that in mind when judging both its output and students' use of it.",
+    "see": [
+      "training-data",
+      "hallucination",
+      "chatbot"
+    ]
+  },
+  {
+    "id": "machine-learning",
+    "term": "Machine learning",
+    "aliases": [
+      "ml",
+      "machine-learning"
+    ],
+    "short": "A way of building software by letting it find patterns in many examples instead of writing rules by hand. Most of what is now called AI works this way.",
+    "see": [
+      "ai",
+      "training-data"
+    ]
+  },
+  {
+    "id": "model",
+    "term": "Model",
+    "aliases": [
+      "models",
+      "ai model",
+      "ai models"
+    ],
+    "short": "The trained system at the core of an AI tool: the patterns it learned from data, stored as numbers. A chatbot is an app built around a model.",
+    "more": "Different models behind the same app can behave differently, so a result you saw last month may not repeat. Treat any AI output as one sample, not a stable answer.",
+    "see": [
+      "llm",
+      "training-data"
+    ]
+  },
+  {
+    "id": "multimodal",
+    "term": "Multimodal",
+    "aliases": [
+      "multi-modal",
+      "multimodality"
+    ],
+    "short": "Able to work with more than one kind of input or output, such as text, images, audio and video, rather than text alone.",
+    "more": "A multimodal tool can read a photo of handwriting, describe a chart or answer questions about a figure. Exams that rely on images or diagrams are not safe from AI by default.",
+    "see": [
+      "llm",
+      "generative-ai"
+    ]
+  },
+  {
+    "id": "notebooklm",
+    "term": "NotebookLM",
+    "aliases": [
+      "notebook lm",
+      "notebooklm's"
+    ],
+    "short": "A Google tool where you upload your own documents and then ask questions about them, with answers tied to those sources. It can also generate summaries and audio overviews.",
+    "more": "Working from your own sources reduces invented content but does not remove it. Still check the answer against the original passage.",
+    "see": [
+      "rag",
+      "hallucination",
+      "approved-tool"
+    ]
+  },
+  {
+    "id": "oral-defence",
+    "term": "Oral defence (viva)",
+    "aliases": [
+      "oral defense",
+      "viva",
+      "viva voce",
+      "oral exam",
+      "oral examination",
+      "oral defences"
+    ],
+    "short": "A short conversation in which a student explains and answers questions about their own work, used to check that they understand what they submitted.",
+    "more": "A brief viva on a written assignment is one of the most reliable ways to confirm authorship and understanding. It takes staff time, so you may use it selectively or for a sample.",
+    "see": [
+      "process-evidence",
+      "ai-detector"
+    ]
+  },
+  {
+    "id": "personal-data",
+    "term": "Personal data",
+    "aliases": [
+      "personal information",
+      "personal details"
+    ],
+    "short": "Any information about an identifiable person: names, email addresses, student numbers, grades, photos, voice recordings, or text that reveals who someone is.",
+    "more": "Student essays, feedback comments and interview recordings usually contain personal data. Treat them as protected before you put them into any AI tool.",
+    "see": [
+      "gdpr",
+      "approved-tool"
+    ]
+  },
+  {
+    "id": "process-evidence",
+    "term": "Process evidence",
+    "aliases": [
+      "process evidence",
+      "evidence of process",
+      "version history",
+      "drafts"
+    ],
+    "short": "Material that shows how a piece of work was made, such as drafts, version history, notes and reading logs, rather than only the finished product.",
+    "more": "Asking for process evidence makes AI-only work harder to pass off and helps students who write honestly. Decide upfront what to collect, for example a version history link or a dated draft.",
+    "see": [
+      "ai-detector",
+      "oral-defence",
+      "disclosure"
+    ]
+  },
+  {
+    "id": "prompt",
+    "term": "Prompt",
+    "aliases": [
+      "prompts",
+      "prompting",
+      "prompted"
+    ],
+    "short": "The instruction or question you type to an AI tool. How clearly you describe the task, context and format strongly affects the answer.",
+    "more": "Good prompts take skill, so students differ in what they get out of the same tool. If you set an AI-based task, say what the prompt should include.",
+    "see": [
+      "chatbot",
+      "system-prompt"
+    ]
+  },
+  {
+    "id": "reasoning-model",
+    "term": "Reasoning model",
+    "aliases": [
+      "reasoning models",
+      "thinking model",
+      "thinking models",
+      "reasoning mode"
+    ],
+    "short": "A model that works through a problem in steps before it answers, which usually helps on maths, logic and multi-part questions. It is slower than a standard chatbot reply.",
+    "more": "Better reasoning does not stop errors. Assignments that mainly ask for worked-through problems are the ones where these tools now do best.",
+    "see": [
+      "llm",
+      "hallucination"
+    ]
+  },
+  {
+    "id": "rag",
+    "term": "Retrieval-augmented generation (RAG)",
+    "aliases": [
+      "rag",
+      "retrieval",
+      "retrieval-augmented",
+      "retrieval augmented generation",
+      "grounding",
+      "grounded"
+    ],
+    "short": "A set-up where the AI first looks up relevant passages in a chosen collection of documents and then writes its answer from them, instead of relying on memory alone.",
+    "more": "NotebookLM, working from sources you upload, is an example. It makes answers easier to check against the source but does not guarantee they are correct.",
+    "see": [
+      "notebooklm",
+      "hallucination",
+      "training-data"
+    ]
+  },
+  {
+    "id": "system-prompt",
+    "term": "System prompt",
+    "aliases": [
+      "system prompts",
+      "custom instructions",
+      "custom instruction",
+      "system instructions",
+      "system message"
+    ],
+    "short": "Standing instructions given to an AI before the conversation starts, setting its role, tone and limits. Many tools let users write their own as custom instructions.",
+    "more": "A tutor-style system prompt that tells the bot to ask questions rather than give answers can support learning. It is easy for students to override or ignore, so do not rely on it as a safeguard.",
+    "see": [
+      "prompt",
+      "chatbot"
+    ]
+  },
+  {
+    "id": "token",
+    "term": "Token",
+    "aliases": [
+      "tokens",
+      "tokenisation",
+      "tokenization"
+    ],
+    "short": "The small chunk of text, roughly a short word or part of a word, that a language model reads and writes. Usage limits and context size are counted in tokens.",
+    "see": [
+      "context-window",
+      "llm"
+    ]
+  },
+  {
+    "id": "training-cutoff",
+    "term": "Training cutoff",
+    "aliases": [
+      "knowledge cutoff",
+      "cutoff date",
+      "training cut-off",
+      "knowledge cut-off",
+      "cutoff"
+    ],
+    "short": "The date after which a model has seen no training data. It knows nothing about later events unless the tool also searches the web.",
+    "more": "Recent papers, policy changes and events may be missing or wrong in answers. Be cautious with AI summaries of fast-moving topics, and tell students the same.",
+    "see": [
+      "training-data",
+      "deep-research"
+    ]
+  },
+  {
+    "id": "training-data",
+    "term": "Training data",
+    "aliases": [
+      "training set",
+      "training corpus",
+      "trained on"
+    ],
+    "short": "The large body of text, images and other material a model learned from. What it contained, and what it left out, shapes what the model does well and badly.",
+    "more": "Training data was often collected from the web without the permission of the authors, which raises copyright and ethical questions you may want students to discuss. It also explains bias in the output.",
+    "see": [
+      "llm",
+      "bias",
+      "training-cutoff"
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI in Your Course</title>
+  <meta name="description" content="An interactive course on generative AI for teaching staff at the Stockholm Resilience Centre.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23EB7125'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip" href="#stage">Skip to content</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button class="tb-btn" type="button" id="btn-chapters" aria-haspopup="dialog" aria-label="Chapters">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+        <span class="tb-label hide-sm">Chapters</span>
+      </button>
+      <a class="brand" href="#/">
+        <span class="brand-org">Stockholm Resilience Centre</span>
+        <span class="brand-title">AI in <b>your</b> course</span>
+      </a>
+      <button class="tb-btn" type="button" id="btn-beginner" aria-pressed="false" title="Show the extra explanations for people new to AI">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 11v6M12 7.5v.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <span class="tb-label hide-sm">Beginner notes</span>
+      </button>
+      <button class="tb-btn rules" type="button" id="btn-rules" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z M14 3v5h5 M9 12h7M9 16h7" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
+        <span class="tb-label">Rules</span>
+      </button>
+    </div>
+    <div class="progress" aria-hidden="true"><div id="progress"></div></div>
+  </header>
+
+  <main id="stage" class="stage" tabindex="-1"></main>
+
+  <nav class="navbar" aria-label="Slide navigation">
+    <div class="navbar-inner">
+      <button class="nav-btn prev" type="button" id="btn-prev"><span aria-hidden="true">←</span> Back</button>
+      <span class="nav-pos" id="nav-pos" aria-live="polite"></span>
+      <button class="nav-btn next" type="button" id="btn-next">Next <span aria-hidden="true">→</span></button>
+    </div>
+  </nav>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
