@@ -3,6 +3,7 @@ import { statementFor, LEVELS, isDefault, ruleLabel } from './dial.js';
 import { PRACTICE, exercisesFor } from './practice.js';
 import { typeLabel } from './course-setup.js';
 import { REDESIGNS } from './stress.js';
+import { AI_NOTE, AI_NOTE_HINT } from '../lib/ai-note.js';
 
 const SINGLE = import.meta.env.MODE === 'single';
 
@@ -27,6 +28,7 @@ export function lectureScript(c) {
   lines.push('When AI meaningfully shaped your work, say so: which tool, what for, and how it changed what you handed in. Two or three sentences is enough. Saying it doesn\'t make a forbidden use OK, though.');
   lines.push('I won\'t use AI detectors. Under EU law they count as high-risk, and SRC stays clear of anything high-risk for now. What I will do is ask you about your work, and an important part of the assessment happens in the room: in seminars, in class, or in a short conversation. The take-home assignments are your preparation for that. If AI does them for you, you\'ll find out when it counts. If you can\'t explain what you handed in, it doesn\'t show the learning outcomes, and it won\'t pass. If something looks like cheating, I\'m required to report it, and someone else decides.');
   lines.push('Used well, these tools can help you learn: ask them to explain, to quiz you, to argue against you. If you\'re unsure whether something is allowed, ask me first. Asking is always fine.');
+  lines.push(AI_NOTE);
   return lines.join('\n\n');
 }
 
@@ -42,6 +44,7 @@ function plain(c, st) {
   out.push('\nTEXT FOR THE SYLLABUS AND BRIEFS\n');
   out.push('The SRC student AI policy applies in this course. Below is what it means for each assignment.\n');
   for (const a of set) out.push(statementFor(a) + '\n');
+  out.push(AI_NOTE + '\n');
   const { tips, exercises } = tipsFor(c);
   out.push('\nPRACTICAL TIPS\n');
   for (const [n, t] of tips) out.push(`${n}: ${t}`);
@@ -56,6 +59,7 @@ function plain(c, st) {
   out.push(lectureScript(c));
   if (st.disclosure?.text) { out.push('\nMY OWN DISCLOSURE LINE\n'); out.push(st.disclosure.text); }
   out.push('\nBEFORE THE COURSE STARTS\n');
+  out.push(`[ ] ${AI_NOTE_HINT}`);
   out.push(CHECKLIST.map((x) => `[ ] ${x}`).join('\n'));
   return out.join('\n');
 }
@@ -80,6 +84,7 @@ function wordDoc(c, st) {
   const body = `<h1>Course AI Kit: ${h(c.name || 'My course')}</h1>
   <h2>Text for the syllabus and briefs</h2><p>The SRC student AI policy applies in this course. Below is what it means for each assignment.</p>
   ${set.map((a) => `<h3>${h(a.name || 'Assignment')}</h3><p>${h(statementFor(a))}</p>`).join('')}
+  <p><i>${h(AI_NOTE)}</i></p>
   <h2>Practical tips</h2><ul>${tips.map(([n, t]) => `<li><b>${h(n)}:</b> ${h(t)}</li>`).join('')}</ul>
   <h2>Exercises you could run</h2><ul>${exercises.map((e) => `<li><b>${h(e.title)}:</b> ${h(e.text)}</li>`).join('')}</ul>
   ${c.assessments.some((a) => (a.redesign || []).length) ? `<h2>Assessment changes I plan</h2><ul>${c.assessments.filter((a) => (a.redesign || []).length).map((a) => `<li><b>${h(a.name)}:</b> ${a.redesign.map((k) => h(REDESIGNS[k]?.title || '')).join('; ')}</li>`).join('')}</ul>` : ''}
@@ -102,6 +107,7 @@ export default function kit(el, { store }) {
   if (part === 'lecture') {
     el.innerHTML = `<div class="card"><p class="q-label">Your first-lecture script</p>
       <div class="statement">${esc(lectureScript(c))}</div>
+      <p class="hint" style="margin:.5rem 0 0">${esc(AI_NOTE_HINT)}</p>
       <p style="margin:.6rem 0 0;display:flex;gap:.5rem;align-items:center"><button type="button" class="btn small" data-copy>Copy script</button><span class="hint" data-msg aria-live="polite"></span></p></div>`;
     el.querySelector('[data-copy]').addEventListener('click', () => copy(lectureScript(c), el.querySelector('[data-msg]')));
     return;
@@ -114,6 +120,8 @@ export default function kit(el, { store }) {
     <section class="card kit-sec"><h3>1. Text for the syllabus and briefs</h3>
       ${set.length ? set.map((a) => `<div class="kit-item"><p class="q-label" style="margin:0">${esc(a.name || 'Untitled')} <span class="pill">${esc(typeLabel(a.type))} · ${esc(ruleLabel(a))}</span></p><p class="statement">${esc(statementFor(a))}</p></div>`).join('')
         : '<p>No assessments yet. <a href="#/c/start/2">Add your course in chapter 0.</a></p>'}
+      ${set.length ? `<p class="statement">${esc(AI_NOTE)}</p>` : ''}
+      <p class="hint">${esc(AI_NOTE_HINT)}</p>
     </section>
     <section class="card kit-sec"><h3>2. Practical tips and exercises</h3>
       ${tips.length ? `<ul>${tips.map(([n, t]) => `<li><strong>${esc(n)}:</strong> ${esc(t)}</li>`).join('')}</ul>` : ''}

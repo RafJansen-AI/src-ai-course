@@ -18,6 +18,7 @@ An interactive course on generative AI for teaching staff at the Stockholm Resil
 
 | Date | Change |
 | --- | --- |
+| 12 Nov 2026 | Every text you copy from the course (lecture script, brief text, kit) ends with an AI disclosure line. Site is link-only. |
 | 12 Nov 2026 | After review: chapter 7 follows SU's reporting procedure (investigating officer, Higher Education Ordinance 10:9) and says where leniency fits. Detectors described as ruled out for now. Reference-list checks, learning modes, SU's Copilot, syllabus and study-adaptation notes, assignments as exam prep. NotebookLM is now Gemini Notebook. Closing slide, sources page, accessibility fixes. |
 | 12 Nov 2026 | Fonts are now served with the site, so no requests go to Google. Chapter 7: more room for students who didn't know the rules while they're new. |
 | 12 Nov 2026 | First version: chapters 0 to 9, rules drawer with teacher policy V7 and student policy V8. |
