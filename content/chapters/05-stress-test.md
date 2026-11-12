@@ -9,22 +9,31 @@ minutes: 7
 
 This is the main takeaway of the course. **Under our rules, you can't reliably tell whether take-home work was done with unauthorised AI. So rely mainly on examination you can see**: in-class exams, in-class writing, oral checks, seminars where students explain their own work.
 
-That doesn't mean dropping take-home work. It means changing its role: take-home assignments become preparation and practice, where AI as a tutor can genuinely help, and the decisive part of the grade happens in the room.
+That doesn't mean dropping take-home work. It means changing its role: take-home assignments become **preparation for the exam**, where AI as a tutor can genuinely help, and the decisive part of the grade happens in the room. Tell students this. A student who lets AI do the assignments skips the practice, and pays for it at the exam.
 
-Other patterns that help, on top of that:
+Well-crafted take-home assignments can still be valid assessment, even if they're weaker than examining in the room. Patterns that help:
 
+- **Build it on what happened in class.** A take-home text that has to work from your seminar discussion, a guest lecture or a field visit is hard to outsource, and usually better for it.
 - **A short oral check.** Five to ten minutes on the student's own submission. For everyone, or a random sample announced in advance.
 - **Process evidence.** Outline, draft, version history, a short note on decisions.
-- **Something only your course has.** Your seminar, your field visit, your dataset, a local case.
+- **Something only your course has.** Your dataset, a local case, material you hand out.
 - **AI output as material.** Students critique, correct and source an AI answer, ideally in class.
 
-None of these needs you to know whether AI was used. That's the point.
+None of these needs you to know whether AI was used.
+
+:::rule Check the syllabus first
+At SU, the forms of examination are set in the course syllabus. Adding a graded oral or in-class part may need a syllabus revision, so start early and talk to the director of studies. It also matters if something goes wrong: a cheating case can only concern an examination element that's in the syllabus.
+:::
+
+:::note Students with study adaptations
+Handwritten, no-device or oral formats affect students with approved adaptations (extra time, a computer, another format). Plan for them before you announce the format, not after.
+:::
 
 ===
 <!-- slide: wide -->
 ## Stress-test your assessments
 
-Five quick questions per assessment. You get a risk rating and redesign ideas that fit. Tick the ones you'll use and they go into your kit.
+Six quick questions per assessment. You get a risk rating and redesign ideas that fit. Tick the ones you'll use and they go into your kit.
 
 <div data-widget="stress"></div>
 
@@ -38,8 +47,8 @@ Five common SRC-style assessments, redesigned. Small changes, mostly.
 | --- | --- | --- |
 | **Seminar reflection** | 600 words on the readings, posted online. | Same, plus one point from the seminar discussion, and two minutes presenting a discussion question in class. |
 | **Policy brief** | Written at home, graded on the PDF. | Outline handed in at week 3 for quick feedback. A 10-minute conversation on the final brief, 20% of the grade. |
-| **Literature review** | 25 sources, written over four weeks. | Annotated list of the 8 most important sources first, with one quote and page each. Students may use deep-research tools, but must say which, and defend their choice of sources. |
-| **R or Python exercise** | Hand in a script and a results section. | Code written with AI help is fine (level 4, code only). Interpretation done in a 45-minute in-class session with their own output. |
+| **Literature review** | 25 sources, written over four weeks. | Annotated list of the 8 most important sources first, with one quote and page each. *Adapted rules:* students may use [[deep-research tools|deep-research]], but must say which, and defend their choice of sources. |
+| **R or Python exercise** | Hand in a script and a results section. | *Adapted rules:* code written with AI help is fine; the interpretation must be the student's own. Interpretation done in a 45-minute in-class session with their own output. |
 | **Group project** | Report and slides. | Each member presents a part and takes questions on another member's part. Short individual reflection on what they did. |
 
 :::grey Oral checks cost time, and not everyone does well in them

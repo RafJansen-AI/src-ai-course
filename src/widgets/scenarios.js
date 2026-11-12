@@ -25,7 +25,7 @@ export const SCENARIOS = [
     id: 'detector',
     text: 'An essay reads oddly smooth. You run it through an [[AI detector]], not as proof, "just to have a look".',
     verdict: 'no',
-    why: '[[rule:t-3c|Clause 3C]] is flat: don\'t use AI detection tools to infer whether text was AI-generated. They are unreliable and flag human writing, more often for non-native English writers. "Just a look" still shapes how you read the student. Talk to the student about the work instead (chapter 7).',
+    why: '[[rule:t-3c|Clause 3C]] is flat: don\'t use AI detection tools to infer whether text was AI-generated. Some detectors have become quite good, and SRC is keeping an eye on them, but for now the policy treats their use as high-risk under the [[EU AI Act]] and rules them out. "Just a look" still shapes how you read the student. Ask about the work instead (chapter 7).',
   },
   {
     id: 'mcq',

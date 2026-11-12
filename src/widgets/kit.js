@@ -11,7 +11,7 @@ export function lectureScript(c) {
   const adapted = all.filter((a) => !isDefault(a));
   const lines = [];
   lines.push(`Before we start on the content: a few minutes on AI in ${c.name || 'this course'}.`);
-  lines.push('SRC has a policy for how students may use AI. It\'s linked in the course room; please read it, it\'s two pages. The short version: you may use AI to support your learning, to explain things, quiz you, give feedback on your own draft or check your language. You may not hand in text, analysis or code that AI wrote, even if you edited it.');
+  lines.push('SRC has two AI policies: one for you as students and one for us as teachers. Both are linked in the course room. Please read them before the first assignment; they\'re two pages each, and you\'ll know what you can expect from us too. The short version for you: you may use AI to support your learning, to explain things, quiz you, give feedback on your own draft or check your language. You may not hand in text, analysis or code that AI wrote, even if you lightly edited or paraphrased it.');
   if (adapted.length) {
     lines.push('For some assignments in this course the rules are different, and the brief says so:');
     for (const a of adapted) {
@@ -25,7 +25,7 @@ export function lectureScript(c) {
   if (whys.length) lines.push(`Why the limits: an assignment exists to show that you can do something yourself. ${whys.slice(0, 2).map((a) => `In ${a.name || 'one assignment'}, that's to ${a.why.trim().replace(/\.$/, '')}.`).join(' ')} If AI does that part, you haven\'t learned it, and the grade means nothing.`);
   else lines.push('Why the limits: an assignment exists to show that you can do something yourself. If AI does that part, you haven\'t learned it, and the grade means nothing, for you or for anyone who relies on it later.');
   lines.push('When AI meaningfully shaped your work, say so: which tool, what for, and how it changed what you handed in. Two or three sentences is enough. Saying it doesn\'t make a forbidden use OK, though.');
-  lines.push('I won\'t use AI detectors; they don\'t work. What I will do is ask you about your work, and an important part of the assessment happens in the room: in seminars, in class, or in a short conversation. If you can\'t explain what you handed in, it doesn\'t show the learning outcomes, and it won\'t pass. If something looks like cheating, I\'m required to report it.');
+  lines.push('I won\'t use AI detectors; SRC rules them out for now. What I will do is ask you about your work, and an important part of the assessment happens in the room: in seminars, in class, or in a short conversation. The take-home assignments are your preparation for that. If AI does them for you, you\'ll find out when it counts. If you can\'t explain what you handed in, it doesn\'t show the learning outcomes, and it won\'t pass. If something looks like cheating, I\'m required to report it, and someone else decides.');
   lines.push('Used well, these tools can help you learn: ask them to explain, to quiz you, to argue against you. If you\'re unsure whether something is allowed, ask me first. Asking is always fine.');
   return lines.join('\n\n');
 }
@@ -62,10 +62,14 @@ function plain(c, st) {
 
 const CHECKLIST = [
   'AI rules in the syllabus, and the relevant one in every assignment brief',
-  'SRC student AI policy linked in the course room',
+  'Both SRC AI policies (student and teacher) linked in the course room, or your adapted course rules if you have them, where students can find them',
+  'Students asked to read the policies before the first assignment',
   'Five minutes in the first lecture to go through the rules and the why',
   'Students told how to disclose, with an example',
   'In-class or oral parts of the assessment scheduled (chapter 5)',
+  'Checked the syllabus: any new graded oral or in-class part is in it, or a syllabus revision is on its way',
+  'Plan ready for students with approved study adaptations (extra time, other formats)',
+  'A low-stakes practice task early on, so students meet the rules before it counts',
   'Agreed with co-teachers and TAs on the same rules',
 ];
 

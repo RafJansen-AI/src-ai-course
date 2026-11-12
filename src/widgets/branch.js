@@ -19,23 +19,25 @@ The course follows the SRC student rules, and the brief spelled them out: AI may
     ],
   },
   detector: {
-    text: `**Not an option.** SRC teachers must not use AI detectors ([[rule:t-3c|teacher policy 3C]]). They're unreliable, and a score is not evidence you could use anyway. A detector result would also colour how you read everything Sam says next.`,
+    text: `**Not an option.** SRC policy rules AI detectors out for now ([[rule:t-3c|teacher policy 3C]]). Some have become quite good, but SRC treats them as high-risk use under the [[EU AI Act]] and has chosen to stay clear of that for the time being. A score also wouldn't settle anything, and it would colour how you read everything Sam says next.`,
     choices: [{ label: 'Go back', to: 'start' }],
   },
   failnow: {
-    text: `**Not yet.** You don't know what happened, and a fail "for AI misuse" is a misconduct finding you're not allowed to make yourself. In Sweden, deciding whether a student cheated is the job of the disciplinary board, not the teacher.
+    text: `**Not an option.** A fail "for AI misuse" is a cheating finding, and that's not yours to make. At SU, whether a student cheated is decided by the vice-chancellor or the disciplinary board.
 
-You *can* assess the brief on its merits, but you don't have enough to go on yet. And the missing reference needs explaining whatever its cause.`,
+You *can* assess the brief on its merits. But you don't have enough to go on yet, and the missing reference needs explaining whatever its cause.`,
     choices: [{ label: 'Go back', to: 'start' }],
   },
   ignore: {
     text: `**This is the option that does the most damage.** Sam learns that it works, other students notice, and the next cohort hears about it. Grading a brief you have good reason to doubt as if it were Sam's own also isn't fair to the students who did the work.
 
-You don't need certainty to ask questions. You need a reason, and you have two.`,
+You don't need certainty to act. You need a reason, and you have two.`,
     choices: [{ label: 'Go back', to: 'start' }],
   },
   invite: {
-    text: `Good. You email Sam: "I'd like to talk through your policy brief before I grade it. 15 minutes, any time this week."
+    text: `You email Sam: "I'd like to talk through your policy brief as part of assessing it. 15 minutes, any time this week."
+
+Keep this a conversation about the *work*, the kind you could have with any student. If it turns into "what did you do", that's the investigating officer's conversation, not yours.
 
 Sam comes. **How do you open?**`,
     choices: [
@@ -44,7 +46,7 @@ Sam comes. **How do you open?**`,
     ],
   },
   askdirect: {
-    text: `Sam says "only for grammar", and now you're stuck: you can't prove otherwise, and the conversation has become about AI instead of about the work.
+    text: `Sam says "only for grammar", and now you're stuck: you've started investigating, which isn't your role, and the conversation has become about AI instead of about the work.
 
 A yes/no question about tools invites a yes/no answer. Questions about the *work* tell you far more, and they're fair to a student who did it honestly.`,
     choices: [{ label: 'Try the other opening', to: 'askwork' }],
@@ -62,45 +64,46 @@ A yes/no question about tools invites a yes/no answer. Questions about the *work
   },
   fine: {
     end: 'good',
-    text: `**Grade the brief as normal.** Some students write better than they talk, especially in a second language. Tell Sam to fix the reference and maybe to check the reference list against the sources next time.
+    text: `**Grade the brief as normal.** Some students write better than they talk, especially in a second language. Tell Sam to fix the reference and to check the reference list against the sources next time.
 
-You've lost 15 minutes and gained a student who knows you read their work. That's a good trade, and it's why the conversation should come before any conclusion.`,
+You've lost 15 minutes and gained a student who knows you read their work. That's a good trade.`,
   },
   admits: {
     end: 'report',
-    text: `**This is now a well-founded suspicion, and you must report it.** Under the Higher Education Ordinance (chapter 10, section 2), a teacher who has *well-founded* reasons to suspect cheating has to report it to the vice-chancellor. At SU that goes through the disciplinary procedure. You don't get to settle it informally, even kindly.
+    text: `**Report it to the investigating officer.** Under the Higher Education Ordinance (chapter 10, section 9), a well-founded suspicion of cheating has to be reported to the vice-chancellor. At SU you do that through your department's investigating officer. You don't get to settle it informally, even kindly.
 
 What to do:
+- Stop the conversation about what happened: that's for the investigating officer.
 - Write down what you asked and what Sam said, the same day.
 - Keep the brief, the reference check and the seminar notes.
-- Tell Sam it will be reported and that the disciplinary board decides, not you.
-- Don't grade the brief until the case is decided.
+- Tell Sam it will be reported and that someone else decides, not you.
+- Wait to grade the brief until the case is closed (SU's recommendation).
 
-Reporting isn't punishing. The board looks at whether the student *intended* to mislead, and Sam gets to give their side.`,
+Reporting isn't punishing. The vice-chancellor can close a case without action, and Sam gets to give their side.`,
   },
   unaware: {
-    end: 'assess',
-    text: `**Be understanding, but be clear.** The rules are new, and plenty of students honestly don't see where "help" ends. Sam told you openly, which doesn't look like an attempt to mislead. Cheating needs that intent.
+    end: 'report',
+    text: `**Be understanding, and still report it.** The rules are new, and plenty of students honestly don't see where "help" ends. But whether Sam *meant* to mislead is exactly the question you don't get to decide. That's for the vice-chancellor and the disciplinary board.
 
 What to do:
 - Explain the rule and why it's there. Point to the line in the brief.
-- Assess the brief on its merits. The parts AI wrote don't show the learning outcomes. If your course allows a resubmission, this is a good case for one.
-- Write down what was said, in case it comes up again.
-- If you're unsure whether this still counts as a well-founded suspicion, ask the director of studies before deciding. Here, the rule was in the brief and the first lecture, which makes "I didn't know" weaker than it would be in a course that said nothing.
+- Report to the investigating officer, and **put the understanding in the report**: Sam disclosed it openly, didn't see it as cheating, and these rules are new. Those facts count when the case is assessed, and a case can be closed without action.
+- Write down what was said.
+- Don't offer a deal (a quiet resubmission, a lower grade) in place of reporting.
 
-As the rules settle in, this excuse should get rarer, and your patience with it can shrink accordingly.`,
+If this had been a draft or an ungraded practice task, you could have explained the rule and moved on. That's why chapter 6 suggests a practice round early in the course.`,
   },
   denies: {
     end: 'assess',
-    text: `**You have a doubt, but maybe not a well-founded suspicion.** Talk to the examiner or director of studies before deciding whether to report. A fabricated reference with no explanation can be enough on its own; check SU's guidance.
+    text: `**You have a doubt. Ask the investigating officer whether to report.** The bar is objective grounds, not proof, and a fabricated reference with no explanation may be enough on its own. Don't try to settle it yourself.
 
-Separately: **does the brief show the learning outcomes?** If the assessment includes being able to explain and defend the argument (an oral part, a seminar defence), you can assess that and fail it on its merits if Sam can't. If the assessment is only the written brief, you can't fail it for what Sam couldn't say in a meeting.
+Separately: **does the brief show the learning outcomes?** If the examination in the syllabus includes explaining and defending the argument (an oral part, a seminar defence), you can assess that and fail it on its merits if Sam can't. If the examined part is only the written brief, you can't fail it for what Sam couldn't say in a meeting.
 
 That's the lesson for the next course: examine the important part in the room (chapter 5), and the question of "did they use AI" matters much less.`,
   },
 };
 
-const ENDS = { good: 'Good outcome', report: 'Report it', assess: 'Grey area' };
+const ENDS = { good: 'Good outcome', report: 'Report it', assess: 'Ask first' };
 
 export default function branch(el, { store }) {
   let path = ['start'];

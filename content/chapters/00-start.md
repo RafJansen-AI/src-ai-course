@@ -22,7 +22,7 @@ By the end you'll have a **Course AI Kit**: text for your syllabus and assignmen
 
 One message runs through the whole course: **under our rules, unauthorised AI use is hard to spot, so the parts of the assessment that matter most should happen in the room.**
 
-- About 45 minutes. Your progress is saved in this browser, so you can stop and come back.
+- About an hour, with all the exercises. Short on time? Do chapters 3, 5 and 9 (about 20 minutes) and come back for the rest. Your progress is saved in this browser.
 - The **Rules** button (top right) opens SRC's current AI policies at any point.
 - Dotted-underlined words like [[hallucination]] explain themselves when you hover or tap.
 - Use the arrow keys or the buttons at the bottom to move on.

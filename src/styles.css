@@ -68,7 +68,7 @@ body {
 }
 h1, h2, h3, h4 { color: var(--heading); line-height: 1.25; margin: 0 0 .6em; }
 h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 900; letter-spacing: -.01em; }
-h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); font-weight: 700; }
+h2, h1.slide-title { font-size: clamp(1.4rem, 3vw, 1.8rem); font-weight: 700; letter-spacing: 0; }
 h3 { font-size: 1.15rem; font-weight: 700; }
 p, ul, ol { margin: 0 0 1em; }
 a { color: var(--fire-ink); text-underline-offset: .15em; }
@@ -132,6 +132,9 @@ main { min-height: calc(100vh - 140px); }
 .callout > :last-child { margin-bottom: 0; }
 .callout-title { font-weight: 900; color: var(--heading); margin-bottom: .35em; display: flex; gap: .45rem; align-items: center; }
 .callout-grey { border-left-color: var(--fire); background: var(--fire-soft); }
+.callout a:not(.term) { color: var(--link-on-fire, #9A430B); }
+:root[data-theme="dark"] .callout a:not(.term) { color: var(--fire-ink); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .callout a:not(.term) { color: var(--fire-ink); } }
 .callout-tip { border-left-color: var(--olive); background: var(--olive-soft); }
 .callout-rule { border-left-color: var(--blue); background: var(--sky-soft); }
 .callout-title .tag { font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; padding: .1rem .45rem; border-radius: 4px; background: var(--fire); color: #1a0c02; }

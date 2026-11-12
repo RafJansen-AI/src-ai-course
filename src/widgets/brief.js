@@ -37,7 +37,7 @@ const FIXES = [
   },
   {
     id: 'detector', good: false, label: 'Say that submissions will be checked with an AI detector',
-    fb: 'Not allowed under SRC policy (teacher policy 3C), and the tools are unreliable. Threatening it also invites false accusations and arguments you can\'t win.',
+    fb: 'Ruled out by SRC policy for now (teacher policy 3C), which treats detectors as high-risk use under the EU AI Act. Threatening it also shifts the focus to catching students instead of what they can show.',
   },
   {
     id: 'ban', good: false, label: 'Ban AI completely for this task',

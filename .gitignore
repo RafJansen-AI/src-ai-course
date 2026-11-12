@@ -3,3 +3,4 @@ dist/
 dist-single/
 .wrangler/
 .DS_Store
+*.log

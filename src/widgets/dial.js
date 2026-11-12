@@ -106,7 +106,7 @@ export default function dial(el, { store }) {
   let sel = course().assessments[0].id;
   const save = (fn) => store.update((s) => { const a = s.course.assessments.find((x) => x.id === sel); if (a) fn(a); });
   const cur = () => course().assessments.find((x) => x.id === sel);
-  const beginner = () => store.get().beginner === true;
+  const beginner = () => store.get().beginner !== false;
 
   const draw = (focusSel) => {
     const a = cur();

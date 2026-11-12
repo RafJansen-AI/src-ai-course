@@ -33,10 +33,12 @@ An illustration, shortened. A user asks a chatbot for sources:
 > 2. Berg, K. & Halvorsen, T. (2017). Cascading tipping points in Baltic cod governance. *Ecology and Society*, 22(3). doi:10.5751/ES-12345-220399
 > 3. ...
 
-The first one is a real paper. **The second is invented for this illustration**, and that's the point: it has plausible authors in the right field, a fitting journal, a DOI in the right format. A chatbot produces references like this routinely. Newer tools that search the web do it less, but not never.
+The first one is a real paper. **The second is invented for this illustration**, and that's the point: it has plausible authors in the right field, a fitting journal, a DOI in the right format. Free chatbots without web search still do this. Paid versions and [[agentic|ai-agent]] tools that search and check their own output do it much less, so this happens less and less, but not never.
 
 :::tip What this means for you
-A reference list is no longer proof that someone read the sources. Spot-check two references per submission, and ask students to quote the page they relied on. A fabricated reference is a problem whatever its cause.
+A reference list is no longer proof that someone read the sources. The quick check: paste a submission's reference list (only the list, no name) into a chatbot with web search and ask it to look up each reference and flag any it can't find. Then look up the flagged ones yourself; the chatbot can be wrong in both directions. Chapter 8 says why this is fine under the rules.
+
+It won't catch everyone. Students with paid or agentic tools rarely hand in invented references. Asking students to quote the page they relied on catches unread sources too. A fabricated reference is a problem whatever its cause.
 :::
 
 ===
@@ -48,9 +50,9 @@ As of November 2026. Make a guess for each, then flip the card.
 <div data-widget="flipcards"><script type="application/json">
 [
 {"tag":"Seminar text","front":"Write a 600-word reflection on this week's readings, relating them to your own field.","back":"**Yes, easily**, if the student pastes in the readings or they're well known. Generic without them, but generic often passes. Personal and local details can be invented convincingly."},
-{"tag":"Online quiz","front":"Answer a 20-question multiple-choice quiz in the course room.","back":"**Yes.** A student can paste questions in, or an *AI agent* can open the quiz in a browser and click through it on its own. Treat unsupervised online quizzes as practice, not evidence."},
+{"tag":"Online quiz","front":"Answer a 20-question multiple-choice quiz in the course room.","back":"**Yes.** A student can paste questions in, or an {{AI agent}} can open the quiz in a browser and click through it on its own. Treat unsupervised online quizzes as practice, not evidence."},
 {"tag":"Data analysis","front":"Analyse a dataset in R and interpret the results.","back":"**Mostly, yes.** Code is one of the things these tools do best. The interpretation will be plausible; mistakes are subtle (wrong test, misread variable). A short oral check finds out fast whether the student understands it."},
-{"tag":"Literature review","front":"Write a literature review on a topic, with 25 references.","back":"**Yes, with caveats.** Deep-research tools search, read and write a report with real links in minutes. Coverage can be thin or skewed, and some sources may be misrepresented. Checking takes the student real work, if they do it."},
+{"tag":"Literature review","front":"Write a literature review on a topic, with 25 references.","back":"**Yes, with caveats.** {{Deep-research tools|deep-research}} search, read and write a report with real links in minutes. Coverage can be thin or skewed, and some sources may be misrepresented. Checking takes the student real work, if they do it."},
 {"tag":"Oral exam","front":"Explain and defend your argument to the examiner for 15 minutes.","back":"**No.** AI can help a student *prepare*, which is fine and often good. It can't sit the conversation for them."},
 {"tag":"In-class writing","front":"Write a short argument by hand in the seminar room, no devices.","back":"**No.** Which is why moving a small, important part of an assessment into the room is one of the most effective changes you can make."},
 {"tag":"Field visit report","front":"Report what you observed on our visit to the coastal fishing community, and connect it to the literature.","back":"**Partly.** AI can't have been there, but it can write a convincing report of a visit that sounds like this one. Ask for specifics only attendees would know, or discuss it in the seminar."},

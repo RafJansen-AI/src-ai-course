@@ -58,9 +58,10 @@
       "detector",
       "detectors"
     ],
-    "short": "A tool that claims to tell whether a text was written by AI. In practice these tools are unreliable and regularly flag human writing as machine-made.",
-    "more": "A false accusation can seriously harm a student, and non-native English writers are flagged more often. SRC teachers must not use them at all. Use process evidence and conversation instead.",
+    "short": "A tool that estimates whether a text was written by AI. Some have become quite accurate, but SRC policy rules them out for now: it treats their use as high-risk under the EU AI Act.",
+    "more": "SRC is following how the tools and the law develop and may revisit this. Until then, don't use them, not even \"just to have a look\". A wrong flag can seriously harm a student. Use questions about the work and in-class examination instead.",
     "see": [
+      "ai-act",
       "process-evidence",
       "academic-misconduct",
       "oral-defence"
@@ -91,7 +92,7 @@
       "cleared tools"
     ],
     "short": "An AI tool the university has cleared for a particular kind of data. Approval depends on the data: a tool may be fine for public text but not for student work.",
-    "more": "Do not assume a tool is approved because it is widely used or free. Before putting student work, exam material or any personal data into a tool, check with SU or SRC.",
+    "more": "At SU, staff have Microsoft 365 Copilot Chat on the university login, but not for information at confidentiality level 3 or 4. Don't assume a tool is approved because it's widely used or free. Before putting student work, exam material or personal data into any tool, check with the SRC staff responsible for GDPR.",
     "see": [
       "gdpr",
       "personal-data"
@@ -177,7 +178,7 @@
       "copilot chat"
     ],
     "short": "Microsoft's name for its AI assistants, which appear in Windows, Edge and Office apps. Several different products share the name, and what each can access and store varies.",
-    "more": "Because the name covers different products, \"we have Copilot\" does not settle whether a use is approved. Check which version you have and what data it is cleared for.",
+    "more": "At SU, all staff have Microsoft 365 Copilot Chat when signed in with the university account; your data isn't used for training. Even so, information at confidentiality level 3 or 4 must not go into it, because chat history is saved. Free versions outside the university login have no such protection.",
     "see": [
       "approved-tool",
       "chatbot"
@@ -224,8 +225,8 @@
       "the ai act",
       "artificial intelligence act"
     ],
-    "short": "EU law that regulates AI systems according to risk, with stricter duties for higher-risk uses. Its rules apply in stages, and Sweden and Stockholm University must follow it.",
-    "more": "For teaching, the main point is that some uses, such as AI judging student work, are treated as high risk. Check current SU guidance rather than relying on a summary.",
+    "short": "EU law that regulates AI systems by risk. Some uses are banned outright; \"high-risk\" uses, which include several in education, are allowed but come with strict duties. Its rules apply in stages.",
+    "more": "Annex III lists AI that evaluates learning outcomes or monitors students during tests as high-risk. SRC has chosen to keep AI out of grading and to stay clear of detectors for now, rather than take on those duties. Narrow procedural tasks, such as checking whether references exist, are generally not high-risk. Check current SU guidance rather than relying on a summary.",
     "see": [
       "high-risk-ai-system",
       "ai-literacy",
@@ -337,7 +338,7 @@
       "high risk"
     ],
     "short": "An EU AI Act category for AI uses that can seriously affect people's lives and face strict rules. Annex III lists them, including AI that evaluates learning outcomes.",
-    "more": "This is why SRC policy bans AI from proposing, justifying or influencing a grade, including as a \"second opinion\".",
+    "more": "High-risk doesn't mean banned. It means strict requirements. SRC policy keeps AI out of proposing, justifying or influencing a grade, including as a \"second opinion\", and rules out AI detectors for now, to stay clear of this category.",
     "see": [
       "ai-act",
       "formative-summative",
@@ -405,14 +406,16 @@
     ]
   },
   {
-    "id": "notebooklm",
-    "term": "NotebookLM",
+    "id": "gemini-notebook",
+    "term": "Gemini Notebook (formerly NotebookLM)",
     "aliases": [
+      "gemini notebook",
+      "notebooklm",
       "notebook lm",
       "notebooklm's"
     ],
-    "short": "A Google tool where you upload your own documents and then ask questions about them, with answers tied to those sources. It can also generate summaries and audio overviews.",
-    "more": "Working from your own sources reduces invented content but does not remove it. Still check the answer against the original passage.",
+    "short": "A Google tool where you upload your own documents and ask questions about them, with answers tied to those sources. It can also make summaries and audio overviews. Google renamed it from NotebookLM in July 2026.",
+    "more": "Working from your own sources reduces invented content but doesn't remove it. Still check the answer against the original passage. The SRC policies, written before the rename, still call it NotebookLM.",
     "see": [
       "rag",
       "hallucination",
@@ -511,9 +514,9 @@
       "grounded"
     ],
     "short": "A set-up where the AI first looks up relevant passages in a chosen collection of documents and then writes its answer from them, instead of relying on memory alone.",
-    "more": "NotebookLM, working from sources you upload, is an example. It makes answers easier to check against the source but does not guarantee they are correct.",
+    "more": "Gemini Notebook (formerly NotebookLM), working from sources you upload, is an example. It makes answers easier to check against the source but does not guarantee they are correct.",
     "see": [
-      "notebooklm",
+      "gemini-notebook",
       "hallucination",
       "training-data"
     ]

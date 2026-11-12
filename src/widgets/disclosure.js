@@ -1,7 +1,7 @@
 import './widgets-extra.css';
 import { esc } from '../lib/content.js';
 
-const TOOLS = ['ChatGPT', 'Microsoft Copilot', 'Claude', 'Gemini', 'NotebookLM', 'Other'];
+const TOOLS = ['ChatGPT', 'Microsoft Copilot', 'Claude', 'Gemini', 'Gemini Notebook', 'Other'];
 const TYPES = [
   ['graded', 'Feedback on graded work'],
   ['formative', 'Formative feedback'],

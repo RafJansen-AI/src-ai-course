@@ -19,7 +19,9 @@ function open(btn, { focus = false } = {}) {
   pop.id = 'gloss-pop';
   pop.setAttribute('role', 'dialog');
   pop.setAttribute('aria-label', e.term);
-  pop.innerHTML = `<h4>${esc(e.term)}</h4><p>${esc(e.short)}</p>${e.more ? `<p class="more">${esc(e.more)}</p>` : ''}`
+  pop.setAttribute('aria-describedby', 'gloss-pop-desc');
+  pop.tabIndex = -1;
+  pop.innerHTML = `<h4>${esc(e.term)}</h4><p id="gloss-pop-desc">${esc(e.short)}</p>${e.more ? `<p class="more">${esc(e.more)}</p>` : ''}`
     + `<p><a href="#/glossary/${e.id}" data-close>Full glossary</a></p>`;
   document.body.appendChild(pop);
   btn.setAttribute('aria-expanded', 'true');
@@ -28,7 +30,12 @@ function open(btn, { focus = false } = {}) {
   pop.addEventListener('mouseleave', scheduleClose);
   pop.addEventListener('mouseenter', cancelClose);
   pop.querySelector('[data-close]').addEventListener('click', close);
-  if (focus) pop.querySelector('a').focus();
+  if (focus) {
+    // Keyboard and screen-reader users: move focus into the explanation so it is read out,
+    // and close it again when focus leaves.
+    pop.focus();
+    pop.addEventListener('focusout', (ev) => { if (pop && !pop.contains(ev.relatedTarget)) { const a = anchor; close(); if (!ev.relatedTarget) a?.focus(); } });
+  }
 }
 
 function place() {
@@ -51,7 +58,8 @@ export function initGlossary() {
   const hoverable = window.matchMedia('(hover: hover)').matches;
   document.addEventListener('click', (ev) => {
     const btn = ev.target.closest('.term');
-    if (btn) { ev.preventDefault(); anchor === btn ? close() : open(btn); return; }
+    // ev.detail === 0: activated with Enter or Space rather than a pointer
+    if (btn) { ev.preventDefault(); anchor === btn ? close() : open(btn, { focus: ev.detail === 0 }); return; }
     if (pop && !pop.contains(ev.target)) close();
   });
   if (hoverable) {

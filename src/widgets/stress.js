@@ -6,16 +6,18 @@ import { ruleLabel } from './dial.js';
 const QUESTIONS = [
   { id: 'unsup', text: 'Do students do it without supervision (at home, over days)?', risky: 'yes', w: 2 },
   { id: 'output', text: 'Is what you grade mainly a finished product: text, code, slides or a poster?', risky: 'yes', w: 2 },
-  { id: 'public', text: 'Could someone do it well using only public sources, without having been in your seminars, field visits or data?', risky: 'yes', w: 2 },
+  { id: 'public', text: 'Could someone do it well using only public sources, without having been in your seminars, discussions, field visits or data?', risky: 'yes', w: 2 },
   { id: 'process', text: 'Do you see how the work develops (drafts, notes, version history, check-ins)?', risky: 'no', w: 1 },
   { id: 'live', text: 'Do students have to explain or defend the work live (oral, seminar, in-class)?', risky: 'no', w: 2 },
+  { id: 'prep', text: 'Is it preparation for an in-class or oral exam that tests the same skills?', risky: 'no', w: 2 },
 ];
 
 export const REDESIGNS = {
   inclass: { title: 'Examine the core in class', text: 'Our main recommendation. Move the part that decides the grade into the room: a short written exam, an in-class write-up of the core argument, or an interpretation done on site. The take-home part can stay, with the default rules, as preparation.', when: (a) => a.unsup === 'yes' ? 5 : null },
   oral: { title: 'Add a short oral check', text: 'A 5–10 minute conversation per student (or a random sample) about their own submission: "walk me through section 2", "why this source?". The most reliable signal you have. Tell students in advance; it\'s part of the assessment, not an interrogation.', when: (a) => a.live === 'yes' ? null : 4 },
   process: { title: 'Grade the process too', text: 'Ask for a dated outline and a draft, or a link to the version history, and give a small part of the grade for them. It also helps honest students who get feedback earlier.', when: (a) => a.process === 'yes' ? null : 3 },
-  local: { title: 'Tie it to something only your course has', text: 'Your own seminar discussion, a guest lecture, a field visit, a local case, a dataset you hand out. AI can still help, but the student has to bring what they saw and heard.', when: (a) => a.public === 'yes' ? 3 : null },
+  prep: { title: 'Make it preparation for the exam', text: 'Tell students plainly that the assignment trains exactly what the in-class or oral exam will test. A student who lets AI do it skips the practice and finds out when it counts. That makes the take-home part matter without you having to police it.', when: (a) => a.prep === 'no' ? 4 : null },
+  local: { title: 'Build it on what happened in class', text: 'Ask students to work from your own seminar discussion, a guest lecture, a field visit, a local case or a dataset you hand out. AI can still help, but the student has to bring what they saw and heard. A take-home task built on an in-class discussion can be a perfectly valid assessment.', when: (a) => a.public === 'yes' ? 3 : null },
   critique: { title: 'Make AI output the material', text: 'Give students an AI-generated answer and ask them to correct, extend and source it. That assesses judgement, which is what you want them to have when AI is everywhere. Requires guidance on how to check AI output.', when: (a) => a.output === 'yes' ? 1 : null },
   reflect: { title: 'Ask for the decisions, not just the result', text: 'A short memo: what alternatives did you consider, what did you reject and why, what would you do differently? Hard to fake well without having done the work, and easy to probe in an oral check.', when: (a) => a.output === 'yes' ? 1 : null },
 };
@@ -28,12 +30,12 @@ function score(ans) {
 export function riskOf(ans) {
   if (QUESTIONS.some((q) => !ans[q.id])) return null;
   const s = score(ans);
-  return s >= 6 ? 'high' : s >= 3 ? 'medium' : 'low';
+  return s >= 7 ? 'high' : s >= 4 ? 'medium' : 'low';
 }
 const RISK = {
   high: { label: 'High', text: 'A student could hand in a passing version of this without learning what it\'s meant to assess, and you\'d have no way of telling. Under our rules you can\'t reliably spot it either, so the fix is in the design.' },
-  medium: { label: 'Medium', text: 'AI could do much of this, but something in the design gives you a view of the student\'s own understanding. Strengthen that part.' },
-  low: { label: 'Low', text: 'The design already shows you what the student can do. Keep it, and use the AI level to say what\'s allowed in the preparation.' },
+  medium: { label: 'Medium', text: 'AI could do much of this, but something in the design gives you a view of the student\'s own understanding, or makes skipping the work cost the student later. A well-crafted assignment like this can still be valid; it\'s just weaker than examining the core in the room. Strengthen what you can.' },
+  low: { label: 'Low', text: 'The design already shows you what the student can do, or the take-home part is practice for an exam that does. Keep it, and make clear in the brief what the rules mean for the preparation.' },
 };
 
 export default function stress(el, { store }) {
@@ -65,7 +67,7 @@ export default function stress(el, { store }) {
       <div aria-live="polite">${risk ? `
         <div class="risk-box risk-${risk}"><p class="risk-head"><span class="risk-tag">${RISK[risk].label} risk</span> ${esc(RISK[risk].text)}</p></div>
         ${ideas.length ? `<p class="q-label" style="margin-top:1.2rem">Redesign ideas for this one. Tick the ones you'll use; they go into your kit.</p>
-        <ul class="ideas">${ideas.map(([k, r]) => `<li><label class="idea"><input type="checkbox" data-idea="${k}" ${chosen.has(k) ? 'checked' : ''}><span><strong>${esc(r.title)}.</strong> ${esc(r.text)}</span></label></li>`).join('')}</ul>` : '<p>No changes needed for this one.</p>'}` : `<p class="hint">Answer all five to see the risk and ideas.</p>`}</div>
+        <ul class="ideas">${ideas.map(([k, r]) => `<li><label class="idea"><input type="checkbox" data-idea="${k}" ${chosen.has(k) ? 'checked' : ''}><span><strong>${esc(r.title)}.</strong> ${esc(r.text)}</span></label></li>`).join('')}</ul>` : '<p>No changes needed for this one.</p>'}` : `<p class="hint">Answer all six to see the risk and ideas.</p>`}</div>
     </div>`;
     el.querySelectorAll('[data-sel]').forEach((b) => b.addEventListener('click', () => { sel = b.dataset.sel; draw(`[data-sel="${sel}"]`); }));
     el.querySelectorAll('[data-q]').forEach((b) => b.addEventListener('click', () => {

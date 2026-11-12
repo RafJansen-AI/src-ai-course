@@ -8,7 +8,8 @@ import { widgets } from './widgets/index.js';
 const SINGLE = import.meta.env.MODE === 'single';
 const $ = (s) => document.querySelector(s);
 const stage = $('#stage');
-const isBeginner = () => store.get().beginner === true;
+// Visitors who skip the check-in get the beginner route: it only adds, and they can switch it off.
+const isBeginner = () => store.get().beginner !== false;
 
 // ---------- sequence of visible slides ----------
 function sequence(includeChapter) {
@@ -58,6 +59,11 @@ function render() {
     <p class="eyebrow">${ch.num !== '' ? `Chapter ${esc(ch.num)} · ` : ''}${esc(ch.title)}${slide.flags.includes('beginner') ? ' <span class="badge">Beginner</span>' : ''}${ch.status === 'soon' ? ' <span class="badge soon">Coming next</span>' : ''}</p>
     ${slide.html}</article>`;
 
+  // Every slide gets one h1: promote the first h2 (styled as before) when the slide has none.
+  if (!stage.querySelector('.slide h1')) {
+    const h2 = stage.querySelector('.slide h2');
+    if (h2) { const h1 = document.createElement('h1'); h1.className = 'slide-title'; h1.innerHTML = h2.innerHTML; h2.replaceWith(h1); }
+  }
   const h = stage.querySelector('h1, h2');
   if (h) { h.id = 'slide-h'; h.tabIndex = -1; }
 
@@ -76,6 +82,7 @@ function render() {
   const prev = seq[pos - 1], next = seq[pos + 1];
   $('#btn-prev').disabled = !prev;
   $('#btn-next').disabled = !next;
+  $('#btn-next').style.visibility = next ? '' : 'hidden';
   $('#btn-next').innerHTML = next && next.ch !== ch ? `Next: ${esc(next.ch.title)} <span aria-hidden="true">→</span>` : 'Next <span aria-hidden="true">→</span>';
   $('#btn-prev').onclick = () => prev && go(prev.ch.id, prev.i);
   $('#btn-next').onclick = () => next && go(next.ch.id, next.i);
@@ -144,7 +151,7 @@ function openMenu() {
         <span class="ch-meta">${done ? '<span class="done-mark" aria-label="done">✓</span> ' : ''}${c.minutes ? `${c.minutes} min` : ''}</span>
         ${c.summary ? `<span class="ch-sub">${esc(c.summary)}</span>` : ''}</a></li>`;
     }).join('')}</ol>
-    <p class="hint" style="margin-top:1.5rem"><a href="#/glossary">Glossary</a> · <a href="#/p/about">About</a> · ${SINGLE ? '' : '<a href="rules.html" target="_blank" rel="noopener">Rules as a page</a> · '}<button class="btn ghost" type="button" data-reset>Start over (clears your answers)</button></p></div>`;
+    <p class="hint" style="margin-top:1.5rem"><a href="#/glossary">Glossary</a> · <a href="#/p/about">About</a> · <a href="#/p/sources">Sources</a> · ${SINGLE ? '' : '<a href="rules.html" target="_blank" rel="noopener">Rules as a page</a> · '}<button class="btn ghost" type="button" data-reset>Start over (clears your answers)</button></p></div>`;
   menu.querySelector('.icon-btn').addEventListener('click', closeMenu);
   const resetBtn = menu.querySelector('[data-reset]');
   resetBtn.addEventListener('click', () => {
@@ -181,7 +188,7 @@ document.addEventListener('click', (ev) => {
 document.addEventListener('keydown', (ev) => {
   if (ev.defaultPrevented || ev.altKey || ev.metaKey || ev.ctrlKey) return;
   const t = ev.target;
-  if (t.closest('input, textarea, select, [contenteditable], .drawer, [role="radiogroup"], [role="slider"]')) return;
+  if (t.closest('input, textarea, select, [contenteditable], .drawer, [role="radiogroup"], [role="slider"], .slide button, .slide a')) return;
   if (ev.key === 'ArrowRight' && !$('#btn-next').disabled) $('#btn-next').click();
   if (ev.key === 'ArrowLeft' && !$('#btn-prev').disabled) $('#btn-prev').click();
 });

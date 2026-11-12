@@ -37,7 +37,7 @@ export default function courseSetup(el, { store }) {
       <label class="field"><span>Course name</span><input type="text" data-f="name" value="${esc(course.name)}" placeholder="e.g. Sustainability Science"></label>
       <label class="field"><span>Level</span><select data-f="level">${['', 'BSc', 'MSc', 'PhD', 'Other'].map((l) => `<option value="${l}" ${course.level === l ? 'selected' : ''}>${l || 'Choose...'}</option>`).join('')}</select></label>
       <p class="q-label" id="assess-h">How is the course assessed?</p>
-      <p class="hint" style="margin-top:-.3rem">List each graded or required piece of work. You'll set an AI level for each one later.</p>
+      <p class="hint" style="margin-top:-.3rem">List each graded or required piece of work. You'll say what the AI rules mean for each one later.</p>
       <ul class="assess-list" aria-labelledby="assess-h" style="list-style:none;padding:0;margin:0 0 .8rem">${course.assessments.map((a, i) => `
         <li class="assess-row" style="display:grid;grid-template-columns:1fr 1fr auto;gap:.5rem;margin-bottom:.5rem">
           <label class="sr-only" for="an-${a.id}">Assessment ${i + 1} name</label>

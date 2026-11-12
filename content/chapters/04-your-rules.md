@@ -46,7 +46,7 @@ For each of your assessments: see what the SRC rules mean in practice, add what 
 ## Two things to be honest about
 
 :::grey You won't be able to tell who followed the rules
-On take-home work, under these rules, unauthorised AI use is very hard to spot. You can't use detectors, and good AI text doesn't look like AI. The rules still matter: they set expectations and give you grounds when work clearly isn't the student's own. But they don't let you *check*. That's what in-class examination is for (next chapter).
+On take-home work, under these rules, unauthorised AI use is very hard to spot. SRC rules out detectors for now, and good AI text doesn't look like AI. The rules still matter: they set expectations and give you grounds when work clearly isn't the student's own. But they don't let you *check*. That's what in-class examination is for (next chapter).
 :::
 
 :::grey Disclosure is necessary, not sufficient

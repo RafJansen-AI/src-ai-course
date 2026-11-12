@@ -70,6 +70,7 @@ export default function spot(el, { store }) {
     return `<div class="result-note spot-result" tabindex="-1">
       <p><strong>All four were written by AI.</strong> ${saidStudent ? `You took ${saidStudent} for a student's work.` : 'You called them all. Most people don\'t.'} Two of them were asked to sound like a student, with typos, hedging and a personal example. It took one sentence of instructions each.</p>
       <p>What this shows: typos, an awkward phrase, a personal anecdote or a correct citation are not evidence either way. Nor is polish. A student who writes well isn't suspect, and a student who writes badly isn't cleared.</p>
+      <p>Four answers is a small test, and a rigged one. But it matches larger studies: when researchers slipped AI-written answers into real university exams, markers missed nearly all of them (Scarfe et al. 2024, on the <a href="#/p/sources">sources page</a>).</p>
       <p style="margin:0"><button type="button" class="btn small secondary" data-again>Try again</button></p></div>`;
   };
   draw();

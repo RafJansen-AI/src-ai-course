@@ -8,7 +8,7 @@ minutes: 4
 ## Good text, no understanding
 
 <!-- TODO (Raf): replace this paragraph with the SRC case once it has been discussed with the course teachers. -->
-A pattern teachers everywhere now report: written seminar texts that are fine. Fluent, well structured, properly referenced. Then, in the seminar, students can't explain the concepts their own texts were built on. This has happened in SRC courses too.
+A pattern teachers everywhere now report: written seminar texts that are fine. Fluent, well structured, properly referenced. Then, in the seminar, students can't explain the concepts their own texts were built on.
 
 That's the problem in one example. A take-home text used to be decent evidence that a student had done the thinking. It isn't any more. A chatbot can produce a passing seminar text, report or piece of code in a couple of minutes, and the tools get better every few months.
 
@@ -16,7 +16,7 @@ That's the problem in one example. A take-home text used to be decent evidence t
 Tools like ChatGPT, Microsoft Copilot, Claude and Gemini. You type a question or instruction (a [[prompt]]) and get fluent text back. They're built on [[large language models]], which chapter 2 explains in plain terms.
 :::
 
-This isn't mainly a cheating problem. It's an **assessment** problem: the thing we grade no longer shows what we want it to show. Cheating is part of it, but so are students who use AI with good intentions and don't notice they've skipped the learning.
+So the problem is less about cheating than about **assessment**: the thing we grade no longer shows what we want it to show. Cheating is part of it, but so are students who use AI with good intentions and don't notice they've skipped the learning.
 
 ===
 <!-- slide: wide -->
@@ -30,7 +30,7 @@ Here's a short seminar question and four answers. Which were written by a studen
 
 ## So what do we do?
 
-If you can't tell by reading, and you can't use [[AI detectors]] (they're unreliable, and SRC policy rules them out), then under our rules unauthorised AI use on take-home work is, in practice, very hard to spot. What works:
+If you can't tell by reading, and you can't use [[AI detectors]] (some have become good, but SRC policy rules them out for now), then under our rules unauthorised AI use on take-home work is, in practice, very hard to spot. What works:
 
 1. **Clear rules, before the course starts.** For most courses that means the SRC student rules, made concrete for each assignment. Chapters 3 and 4.
 2. **Examine what matters in the room.** In-class exams, in-class writing, oral checks: the decisive part of the assessment happens where you can see it. This is the main takeaway of the whole course. Chapter 5.

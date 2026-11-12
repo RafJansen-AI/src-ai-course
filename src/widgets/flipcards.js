@@ -1,6 +1,10 @@
 import './widgets-extra.css';
 import { esc, renderMarkdown } from '../lib/content.js';
 
+// Card text sits in JSON inside a chapter, where [[term]] would be expanded too early,
+// so cards write glossary terms as {{term}} or {{shown|id}}.
+const md = (s) => renderMarkdown(String(s || '').replace(/\{\{([^}]+)\}\}/g, '[[$1]]'));
+
 export default function flipcards(el) {
   let cards = [];
   try { cards = JSON.parse(el.querySelector('script[type="application/json"]')?.textContent || '[]'); } catch { cards = []; }
@@ -12,12 +16,12 @@ export default function flipcards(el) {
       <div class="fc-card" role="listitem" data-i="${i}">
         <div class="fc-face front">
           ${c.tag ? `<span class="fc-tag">${esc(c.tag)}</span>` : ''}
-          <div class="fc-body">${renderMarkdown(String(c.front || ''))}</div>
+          <div class="fc-body">${md(c.front)}</div>
           <button type="button" class="btn small" data-flip aria-label="Show answer to card ${i + 1}">Show answer</button>
         </div>
         <div class="fc-face back">
           ${c.tag ? `<span class="fc-tag">${esc(c.tag)}</span>` : ''}
-          <div class="fc-body">${renderMarkdown(String(c.back || ''))}</div>
+          <div class="fc-body">${md(c.back)}</div>
           <button type="button" class="btn small secondary" data-flip aria-label="Show question of card ${i + 1}">Show question</button>
         </div>
       </div>`).join('')}</div>`;

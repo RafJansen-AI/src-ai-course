@@ -7,7 +7,7 @@ const QUESTIONS = [
   },
   {
     id: 'terms', multi: true, label: 'Which of these could you explain to a colleague in a sentence or two?',
-    options: [['hallucination', 'Hallucination'], ['context', 'Context window'], ['agent', 'AI agent'], ['detectors', 'Why AI detectors fail']],
+    options: [['hallucination', 'Hallucination'], ['context', 'Context window'], ['agent', 'AI agent'], ['detectors', 'Why SRC rules out AI detectors']],
   },
   {
     id: 'conf', label: 'How confident are you about setting AI rules for your own course?',
@@ -44,18 +44,18 @@ export default function checkin(el, { store, rerender }) {
       } else answers[q.id] = b.dataset.v;
       const rec = suggestBeginner(answers);
       store.update((s) => { s.checkin = { ...answers }; if (answers.freq && answers.conf) s.beginner = rec; });
-      document.querySelector('#btn-beginner')?.setAttribute('aria-pressed', String(store.get().beginner === true));
+      document.querySelector('#btn-beginner')?.setAttribute('aria-pressed', String(store.get().beginner !== false));
       draw();
       el.querySelector(`[data-q="${b.dataset.q}"][data-v="${b.dataset.v}"]`)?.focus();
     }));
     el.querySelector('[data-switch]')?.addEventListener('click', () => {
-      store.update((s) => { s.beginner = !s.beginner; });
-      document.querySelector('#btn-beginner')?.setAttribute('aria-pressed', String(store.get().beginner === true));
+      store.update((s) => { s.beginner = s.beginner === false; });
+      document.querySelector('#btn-beginner')?.setAttribute('aria-pressed', String(store.get().beginner !== false));
       draw();
     });
   };
   const resultHtml = () => {
-    const b = store.get().beginner === true;
+    const b = store.get().beginner !== false;
     const conf = Number(answers.conf || 0);
     return `<div class="result-note">
       ${b
