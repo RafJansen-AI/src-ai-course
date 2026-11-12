@@ -18,6 +18,7 @@ An interactive course on generative AI for teaching staff at the Stockholm Resil
 
 | Date | Change |
 | --- | --- |
+| 12 Nov 2026 | Microsoft 365 Copilot Chat named as SU's approved tool: a safe start for beginners, not a requirement. |
 | 12 Nov 2026 | Chapter 7 checked against SU's disciplinary rules: a new slide on what happens after a report, and SU's view on AI cheating. |
 | 12 Nov 2026 | Every text you copy from the course (lecture script, brief text, kit) ends with an AI disclosure line. Site is link-only. |
 | 12 Nov 2026 | After review: chapter 7 follows SU's reporting procedure (investigating officer, Higher Education Ordinance 10:9) and says where leniency fits. Detectors described as ruled out for now. Reference-list checks, learning modes, SU's Copilot, syllabus and study-adaptation notes, assignments as exam prep. NotebookLM is now Gemini Notebook. Closing slide, sources page, accessibility fixes. |

@@ -28,7 +28,9 @@ Clause 3B says AI must not influence a grade "directly or indirectly", and a fak
 :::
 
 :::beginner Which tool may I use?
-At SU, all staff have **Microsoft 365 [[Copilot]] Chat** when signed in with the university account. Your data isn't used to train the model. It is still *not* cleared for information at confidentiality level 3 or 4, because chat history is saved. Free versions of Copilot, ChatGPT and others, outside the university login, have no data protection. Before you paste student work into anything, check with the SRC staff responsible for [[GDPR]]. See [[approved tool]] and SU's [AI resources page](https://medarbetare.su.se/en/support-and-service/it/ai-resources-at-stockholm-university).
+**Microsoft 365 [[Copilot]] Chat**, signed in with your SU account, is in practice the only tool SU has approved. Staff have it, and students most likely do too through their SU Microsoft 365 account. Your data isn't used to train the model. It's a good place to start if you're new to this or unsure about data safety. It's not a requirement: ChatGPT, Claude and others are often stronger, and fine for work that contains no student data or other sensitive information.
+
+Two limits apply whatever you use. Even Copilot Chat isn't cleared for information at confidentiality level 3 or 4, because chat history is saved. And free tools outside the university login have no data protection. Before you paste student work into anything, check with the SRC staff responsible for [[GDPR]]. See [[approved tool]] and SU's [AI resources page](https://medarbetare.su.se/en/support-and-service/it/ai-resources-at-stockholm-university).
 :::
 
 ===

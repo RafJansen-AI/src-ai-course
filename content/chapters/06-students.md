@@ -60,6 +60,8 @@ The big chatbots now have a mode that tutors instead of answering: it asks quest
 - **Microsoft Copilot: the Study and Learn agent**, in the Microsoft 365 Copilot app, if the account has it. It also makes flashcards and quizzes from uploaded material. [Microsoft's guide](https://support.microsoft.com/en-us/education/copilot/getting-started-study-learn-agent)
 - **Gemini: Guided Learning.** Under *More tools*, but at the time of writing only in the US, for adults, and not with school accounts. [Google's guide](https://support.google.com/gemini/answer/16448384)
 
+For students who are new to this or worried about their data, **Microsoft 365 Copilot Chat** with their SU login is a safe place to start; their data isn't used for training. It isn't required, and other tools are often stronger.
+
 Menus move around. If one isn't where the guide says, a search for the mode's name usually finds the current steps. Checked November 2026.
 
 :::grey The line between tutor and ghostwriter is fuzzy
